@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_1921751_employ_0.dept_head" name="x_1921751_employ_0.dept_head">86542b32c313831043d978cc05013102</contains>
+        <role display_value="x_1921751_employ_0.admin" name="x_1921751_employ_0.admin">6f7127bac3df431043d978cc050131c6</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-17 08:20:21</sys_created_on>
+        <sys_id>660563b2c313831043d978cc050131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1921751_employ_0.dept_head.x_1921751_employ_0.admin</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_user_role_contains_660563b2c313831043d978cc050131cc</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-17 08:20:21</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

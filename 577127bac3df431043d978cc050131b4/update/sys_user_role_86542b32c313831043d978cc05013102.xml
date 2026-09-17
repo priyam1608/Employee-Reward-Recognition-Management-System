@@ -2,26 +2,25 @@
     <sys_user_role action="INSERT_OR_UPDATE">
         <assignable_by/>
         <can_delegate>true</can_delegate>
-        <description>Default admin role&#13;
-Full administrative control: catalog, budgets, config, all data </description>
+        <description>Department Head approver for Tier 2 / Tier 3 requests</description>
         <elevated_privilege>false</elevated_privilege>
-        <federated_id>SDMBMNNcJ1IuvaPL4wPCALn7wfTFFXn6oH4/ZX7krOQ=</federated_id>
+        <federated_id>IHRpcJHtPoPNjfcRU5HNN9fhGQa+YoDwlTE9+62PMsw=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
-        <name>x_1921751_employ_0.admin</name>
+        <name>x_1921751_employ_0.dept_head</name>
         <scoped_admin>false</scoped_admin>
-        <suffix>admin</suffix>
+        <suffix>dept_head</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>priyam01</sys_created_by>
-        <sys_created_on>2026-09-17 08:04:50</sys_created_on>
-        <sys_id>6f7127bac3df431043d978cc050131c6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>x_1921751_employ_0.admin</sys_name>
+        <sys_created_on>2026-09-17 08:17:38</sys_created_on>
+        <sys_id>86542b32c313831043d978cc05013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1921751_employ_0.dept_head</sys_name>
         <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
-        <sys_update_name>sys_user_role_6f7127bac3df431043d978cc050131c6</sys_update_name>
+        <sys_update_name>sys_user_role_86542b32c313831043d978cc05013102</sys_update_name>
         <sys_updated_by>priyam01</sys_updated_by>
-        <sys_updated_on>2026-09-17 08:20:04</sys_updated_on>
+        <sys_updated_on>2026-09-17 08:17:38</sys_updated_on>
     </sys_user_role>
 </record_update>

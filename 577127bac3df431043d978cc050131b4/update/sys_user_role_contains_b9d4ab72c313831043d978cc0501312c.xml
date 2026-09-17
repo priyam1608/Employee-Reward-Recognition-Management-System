@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_1921751_employ_0.approver" name="x_1921751_employ_0.approver">0c24e7bec3df431043d978cc05013169</contains>
+        <role display_value="x_1921751_employ_0.hr_approver" name="x_1921751_employ_0.hr_approver">4db42332c313831043d978cc0501318e</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-17 08:19:28</sys_created_on>
+        <sys_id>b9d4ab72c313831043d978cc0501312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1921751_employ_0.approver.x_1921751_employ_0.hr_approver</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_user_role_contains_b9d4ab72c313831043d978cc0501312c</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-17 08:19:28</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>
