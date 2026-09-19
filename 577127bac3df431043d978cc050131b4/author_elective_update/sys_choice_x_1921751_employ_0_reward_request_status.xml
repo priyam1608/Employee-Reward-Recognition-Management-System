@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_1921751_employ_0_reward_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>x_1921751_employ_0_reward_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:35:34</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+            <sys_update_name>sys_choice_x_1921751_employ_0_reward_request_status</sys_update_name>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:35:34</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>x_1921751_employ_0_reward_request</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:35:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:41:58</sys_updated_on>
+            <value>draft</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Manager Approval</label>
+            <language>en</language>
+            <name>x_1921751_employ_0_reward_request</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:42:00</sys_updated_on>
+            <value>pending_manager</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Dept Head Approval</label>
+            <language>en</language>
+            <name>x_1921751_employ_0_reward_request</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:36:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:42:01</sys_updated_on>
+            <value>pending_dept_head</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Finance Approval</label>
+            <language>en</language>
+            <name>x_1921751_employ_0_reward_request</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:36:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:42:07</sys_updated_on>
+            <value>pending_finance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending HR Approval</label>
+            <language>en</language>
+            <name>x_1921751_employ_0_reward_request</name>
+            <sequence>450</sequence>
+            <synonyms/>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:36:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:42:35</sys_updated_on>
+            <value>pending_hr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Approved</label>
+            <language>en</language>
+            <name>x_1921751_employ_0_reward_request</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:37:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:42:39</sys_updated_on>
+            <value>approved</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rejected - Editable</label>
+            <language>en</language>
+            <name>x_1921751_employ_0_reward_request</name>
+            <sequence>600</sequence>
+            <synonyms/>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:40:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:42:41</sys_updated_on>
+            <value>rejected_editable</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rejected - Final</label>
+            <language>en</language>
+            <name>x_1921751_employ_0_reward_request</name>
+            <sequence>700</sequence>
+            <synonyms/>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:41:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:42:44</sys_updated_on>
+            <value>rejected_final</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Fulfilled</label>
+            <language>en</language>
+            <name>x_1921751_employ_0_reward_request</name>
+            <sequence>800</sequence>
+            <synonyms/>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:41:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:42:46</sys_updated_on>
+            <value>closed_fulfilled</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

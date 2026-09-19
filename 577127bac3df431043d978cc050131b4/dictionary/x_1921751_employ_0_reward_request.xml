@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="6ab604cfc317831043d978cc05013165" label="Reward Request" max_length="40" name="x_1921751_employ_0_reward_request" type="collection">
+        <element default="0" label="Leave Days" max_length="40" name="leave_days" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;var gdt = new GlideDateTime();&#13;&#10;&#9;return gdt.getYearLocalTime();  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="javascript:new GlideDateTime().getYearLocalTime();" label="Year" mandatory="true" max_length="40" name="year" type="integer"/>
+        <element label="Date Approved" max_length="40" name="date_approved" type="glide_date_time"/>
+        <element label="Current Approver" max_length="32" name="current_approver" reference="sys_user" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;if(employee){&#13;&#10;&#9;&#9;return employee.department;&#13;&#10;&#9;}&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" dependent="employee.department" dependent_on_field="employee.department" label="Department" mandatory="true" max_length="32" name="department" read_only="true" read_only_option="display_read_only" reference="cmn_department" type="reference" use_dependent_field="true"/>
+        <element label="RITM" max_length="32" name="ritm" reference="sc_req_item" type="reference"/>
+        <element label="Employee" mandatory="true" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element choice="1" label="Quarter" mandatory="true" max_length="255" name="quarter" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Q4" sequence="400" value="q4"/>
+                <element inactive_on_update="false" label="Q1" sequence="100" value="q1"/>
+                <element inactive_on_update="false" label="Q3" sequence="300" value="q3"/>
+                <element inactive_on_update="false" label="Q2" sequence="200" value="q2"/>
+            </choice>
+        </element>
+        <element label="Rejection Comments" max_length="4000" name="rejection_comments" type="string"/>
+        <element choice="1" label="Status" max_length="255" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pending Finance Approval" sequence="400" value="pending_finance"/>
+                <element inactive_on_update="false" label="Rejected - Final" sequence="700" value="rejected_final"/>
+                <element inactive_on_update="false" label="Pending Manager Approval" sequence="200" value="pending_manager"/>
+                <element inactive_on_update="false" label="Closed Fulfilled" sequence="800" value="closed_fulfilled"/>
+                <element inactive_on_update="false" label="Draft" sequence="100" value="draft"/>
+                <element inactive_on_update="false" label="Pending HR Approval" sequence="450" value="pending_hr"/>
+                <element inactive_on_update="false" label="Pending Dept Head Approval" sequence="300" value="pending_dept_head"/>
+                <element inactive_on_update="false" label="Rejected - Editable" sequence="600" value="rejected_editable"/>
+                <element inactive_on_update="false" label="Approved" sequence="500" value="approved"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" read_only_option="display_read_only" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;return current.getDisplayValue('reward_type');  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Reward Type" mandatory="true" max_length="255" name="reward_type" reference="x_1921751_employ_0_reward_catalog" type="reference"/>
+        <element default="0.00" label="Amount" max_length="20" name="amount" type="currency"/>
+        <element label="Justification" mandatory="true" max_length="4000" name="justification" type="string"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Requested By" mandatory="true" max_length="32" name="requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Approved By" max_length="32" name="approved_by" reference="sys_user" type="reference"/>
+        <element default="0" label="Resubmission Count" max_length="40" name="resubmission_count" type="integer"/>
+        <index name="index">
+            <element name="approved_by"/>
+        </index>
+        <index name="index2">
+            <element name="current_approver"/>
+        </index>
+        <index name="index3">
+            <element name="department"/>
+        </index>
+        <index name="index4">
+            <element name="employee"/>
+        </index>
+        <index name="index5">
+            <element name="requested_by"/>
+        </index>
+        <index name="index6">
+            <element name="reward_type"/>
+        </index>
+        <index name="index7">
+            <element name="ritm"/>
+        </index>
+    </element>
+</database>

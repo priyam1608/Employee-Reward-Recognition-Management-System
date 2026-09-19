@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="resubmission_count" label="Resubmission Count" language="en" table="x_1921751_employ_0_reward_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>resubmission_count</element>
+            <help/>
+            <hint/>
+            <label>Resubmission Count</label>
+            <language>en</language>
+            <name>x_1921751_employ_0_reward_request</name>
+            <plural>Resubmission Counts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 11:44:45</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Resubmission Count</sys_name>
+            <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+            <sys_update_name>sys_documentation_x_1921751_employ_0_reward_request_resubmission_count_en</sys_update_name>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 11:44:45</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1921751_employ_0_reward_catalog</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>min_max_value server-side validation</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    var cleanMinValue = parseFloat(current.getValue('min_value'));
+    var cleanMaxValue = parseFloat(current.getValue('max_value'));
+
+    if (cleanMinValue < 0) {
+        gs.addErrorMessage('Minimum Value Cannot Be Negative');
+        current.setAbortAction(true);
+    } else if (cleanMaxValue < 0) {
+        gs.addErrorMessage('Maximum Value Cannot Be Negative');
+        current.setAbortAction(true);
+    } else if (cleanMaxValue < cleanMinValue) {
+        gs.addErrorMessage('Maximum Value Cannot Be Less Than Minimum Value');
+        current.setAbortAction(true);
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-19 10:14:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>64511e6fc39bc71043d978cc050131f8</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>min_max_value server-side validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_script_64511e6fc39bc71043d978cc050131f8</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-19 10:41:01</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=64511e6fc39bc71043d978cc050131f8"/>
+</record_update>

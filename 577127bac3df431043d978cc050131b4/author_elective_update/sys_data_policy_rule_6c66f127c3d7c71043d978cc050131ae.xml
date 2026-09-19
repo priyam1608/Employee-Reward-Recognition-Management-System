@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="DELETE">
+        <disabled>ignore</disabled>
+        <field>leave_days</field>
+        <mandatory>false</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-19 08:12:31</sys_created_on>
+        <sys_data_policy display_value="Amount - Mandatory only when reward type is monetary">d3c5bda3c3d7c71043d978cc05013196</sys_data_policy>
+        <sys_id>6c66f127c3d7c71043d978cc050131ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>leave_days</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_data_policy_rule_6c66f127c3d7c71043d978cc050131ae</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-19 08:12:31</sys_updated_on>
+        <table>x_1921751_employ_0_reward_request</table>
+    </sys_data_policy_rule>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sys_data_policy_rule_6c66f127c3d7c71043d978cc050131ae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule"><sys_data_policy_rule action="INSERT_OR_UPDATE"><disabled>ignore</disabled><field>leave_days</field><mandatory>false</mandatory><sys_class_name>sys_data_policy_rule</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-19 08:12:31</sys_created_on><sys_data_policy display_value="Amount - Mandatory only when reward type is monetary">d3c5bda3c3d7c71043d978cc05013196</sys_data_policy><sys_id>6c66f127c3d7c71043d978cc050131ae</sys_id><sys_mod_count>0</sys_mod_count><sys_name>leave_days</sys_name><sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package><sys_policy/><sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope><sys_update_name>sys_data_policy_rule_6c66f127c3d7c71043d978cc050131ae</sys_update_name><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-19 08:12:31</sys_updated_on><table>x_1921751_employ_0_reward_request</table></sys_data_policy_rule></record_update>]]></payload>
+        <payload_hash>1735152627</payload_hash>
+        <record_name>leave_days</record_name>
+        <reverted_from/>
+        <source>973048cfc3d3831043d978cc05013183</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-19 08:12:31</sys_created_on>
+        <sys_id>27667527c3d7c71043d978cc05013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b8b95fb60000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-19 08:12:31</sys_updated_on>
+        <type>Data Policy Rule</type>
+        <update_guid>e3667527ecd7c7109629e415edc48b18</update_guid>
+        <update_guid_history>e3667527ecd7c7109629e415edc48b18:1735152627</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-19 12:20:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_data_policy_rule">sys_data_policy_rule</sys_db_object>
+        <sys_id>22ae1a7aed654fdfaad8368309adb799</sys_id>
+        <sys_metadata>6c66f127c3d7c71043d978cc050131ae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>leave_days</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent display_value="Amount - Mandatory only when reward type is monetary">d3c5bda3c3d7c71043d978cc05013196</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sys_data_policy_rule_6c66f127c3d7c71043d978cc050131ae</sys_update_name>
+        <sys_update_version display_value="sys_data_policy_rule_6c66f127c3d7c71043d978cc050131ae">27667527c3d7c71043d978cc05013119</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-19 12:20:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

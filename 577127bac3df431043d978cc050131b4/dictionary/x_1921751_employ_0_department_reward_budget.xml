@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="f2889c0bc3d7831043d978cc050131fa" label="Department Reward Budget" max_length="40" name="x_1921751_employ_0_department_reward_budget" type="collection">
+        <element label="Department" mandatory="true" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element default="0.00" label="Allocated Budget" mandatory="true" max_length="20" name="allocated_budget" type="currency"/>
+        <element default="0.00" label="Consumed Budget" max_length="20" name="consumed_budget" type="currency"/>
+        <element choice="1" label="Quarter" mandatory="true" max_length="40" name="quarter" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Q3" value="q3"/>
+                <element inactive_on_update="false" label="Q2" value="q2"/>
+                <element inactive_on_update="false" label="Q4" value="q4"/>
+                <element inactive_on_update="false" label="Q1" value="q1"/>
+            </choice>
+        </element>
+        <element default="javascript:new GlideDateTime().getYearLocalTime();" label="Year" mandatory="true" max_length="40" name="year" type="integer"/>
+        <element label="Remaining Budget" max_length="20" name="remaining_budget" read_only="true" read_only_option="display_read_only" type="currency"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+    </element>
+</database>

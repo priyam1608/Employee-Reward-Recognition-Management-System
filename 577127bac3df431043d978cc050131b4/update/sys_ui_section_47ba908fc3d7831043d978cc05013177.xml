@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="47ba908fc3d7831043d978cc05013177" sys_domain="global" table="x_1921751_employ_0_department_reward_budget" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 12:14:56</sys_created_on>
+            <sys_id>0fba908fc3d7831043d978cc05013180</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1921751_employ_0_department_reward_budget" sys_domain="global" view="Default view">47ba908fc3d7831043d978cc05013177</sys_ui_section>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 12:14:56</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>1</position>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 12:14:56</sys_created_on>
+            <sys_id>c7ba908fc3d7831043d978cc05013181</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1921751_employ_0_department_reward_budget" sys_domain="global" view="Default view">47ba908fc3d7831043d978cc05013177</sys_ui_section>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 12:14:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>quarter</element>
+            <position>2</position>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 12:14:56</sys_created_on>
+            <sys_id>4bba908fc3d7831043d978cc0501318e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1921751_employ_0_department_reward_budget" sys_domain="global" view="Default view">47ba908fc3d7831043d978cc05013177</sys_ui_section>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 12:14:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>allocated_budget</element>
+            <position>3</position>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 12:14:56</sys_created_on>
+            <sys_id>07ba908fc3d7831043d978cc0501318f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1921751_employ_0_department_reward_budget" sys_domain="global" view="Default view">47ba908fc3d7831043d978cc05013177</sys_ui_section>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 12:14:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 12:14:56</sys_created_on>
+            <sys_id>cfba908fc3d7831043d978cc0501318f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1921751_employ_0_department_reward_budget" sys_domain="global" view="Default view">47ba908fc3d7831043d978cc05013177</sys_ui_section>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 12:14:56</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumed_budget</element>
+            <position>5</position>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 12:14:56</sys_created_on>
+            <sys_id>8bba908fc3d7831043d978cc05013190</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1921751_employ_0_department_reward_budget" sys_domain="global" view="Default view">47ba908fc3d7831043d978cc05013177</sys_ui_section>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 12:14:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>year</element>
+            <position>6</position>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 12:14:56</sys_created_on>
+            <sys_id>47ba908fc3d7831043d978cc05013191</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1921751_employ_0_department_reward_budget" sys_domain="global" view="Default view">47ba908fc3d7831043d978cc05013177</sys_ui_section>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 12:14:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>remaining_budget</element>
+            <position>7</position>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 12:14:56</sys_created_on>
+            <sys_id>03ba908fc3d7831043d978cc05013192</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1921751_employ_0_department_reward_budget" sys_domain="global" view="Default view">47ba908fc3d7831043d978cc05013177</sys_ui_section>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 12:14:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 12:14:56</sys_created_on>
+            <sys_id>cbba908fc3d7831043d978cc05013192</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1921751_employ_0_department_reward_budget" sys_domain="global" view="Default view">47ba908fc3d7831043d978cc05013177</sys_ui_section>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 12:14:56</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1921751_employ_0_department_reward_budget</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>priyam01</sys_created_by>
+            <sys_created_on>2026-09-17 12:14:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>47ba908fc3d7831043d978cc05013177</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1921751_employ_0_department_reward_budget</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+            <sys_update_name>sys_ui_section_47ba908fc3d7831043d978cc05013177</sys_update_name>
+            <sys_updated_by>priyam01</sys_updated_by>
+            <sys_updated_on>2026-09-17 12:14:56</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

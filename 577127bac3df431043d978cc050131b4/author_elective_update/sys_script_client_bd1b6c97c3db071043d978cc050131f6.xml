@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Minimum 50 characters are required in 'justification' field</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Minimum 50 characters in justification</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   
+   var justification = g_form.getValue('justification');
+
+   if(justification.length < 50){
+	g_form.showFieldMsg('justification','Justification can not be less than 50 characters','error');
+	return false;
+   }
+   
+   g_form.hideFieldMsg('justification');
+   return true;
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-18 08:07:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bd1b6c97c3db071043d978cc050131f6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Minimum 50 characters in justification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_script_client_bd1b6c97c3db071043d978cc050131f6</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-18 08:12:16</sys_updated_on>
+        <table>x_1921751_employ_0_reward_request</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sys_script_client_bd1b6c97c3db071043d978cc050131f6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Minimum 50 characters are required in 'justification' field&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Minimum 50 characters in justification&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+   
+   var justification = g_form.getValue('justification');
+
+   if(justification.length &lt; 50){
+	g_form.showFieldMsg('justification','Justification can not be less than 50 characters','error');
+	return false;
+   }
+   
+   g_form.hideFieldMsg('justification');
+   return true;
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;priyam01&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-18 08:07:40&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bd1b6c97c3db071043d978cc050131f6&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Minimum 50 characters in justification&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Employee Reward Management" source="x_1921751_employ_0"&gt;577127bac3df431043d978cc050131b4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Reward Management"&gt;577127bac3df431043d978cc050131b4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_bd1b6c97c3db071043d978cc050131f6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;priyam01&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-18 08:12:16&lt;/sys_updated_on&gt;&lt;table&gt;x_1921751_employ_0_reward_request&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-850549351</payload_hash>
+        <record_name>Minimum 50 characters in justification</record_name>
+        <reverted_from/>
+        <source>973048cfc3d3831043d978cc05013183</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-18 08:12:16</sys_created_on>
+        <sys_id>02cc681fc3db071043d978cc050131eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b392c88d0000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-18 08:12:16</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>cecc681f29db0710b22f4cc0302f64d0</update_guid>
+        <update_guid_history>cecc681f29db0710b22f4cc0302f64d0:-850549351,d71ce0db84db071001c98b0e6aada622:-838327998,a80ce89bf4db07109f03b7b863b84a56:1483437921,eabb649ba8db0710a5b3cf5904f44ba1:1104800006</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-19 07:22:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>43c8e5ec73324908990594315b2a6399</sys_id>
+        <sys_metadata>bd1b6c97c3db071043d978cc050131f6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Minimum 50 characters in justification</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent display_value="Reward Request">6ab604cfc317831043d978cc05013165</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sys_script_client_bd1b6c97c3db071043d978cc050131f6</sys_update_name>
+        <sys_update_version display_value="sys_script_client_bd1b6c97c3db071043d978cc050131f6">02cc681fc3db071043d978cc050131eb</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-19 07:22:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

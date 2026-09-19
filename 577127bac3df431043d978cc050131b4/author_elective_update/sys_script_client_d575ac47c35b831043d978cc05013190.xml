@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>min_value</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Min_value onChange validation</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+   var cleanMinValue = newValue.split(';')[1];
+   if(cleanMinValue < 0){
+	g_form.showFieldMsg('min_value', 'Minimum Value Cannot Be Negative', 'error');
+   }
+   else{
+	g_form.hideFieldMsg('min_value');
+   }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-17 13:45:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d575ac47c35b831043d978cc05013190</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Min_value onChange validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_script_client_d575ac47c35b831043d978cc05013190</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-17 14:04:23</sys_updated_on>
+        <table>x_1921751_employ_0_reward_catalog</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sys_script_client_d575ac47c35b831043d978cc05013190</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;min_value&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Min_value onChange validation&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+   var cleanMinValue = newValue.split(';')[1];
+   if(cleanMinValue &lt; 0){
+	g_form.showFieldMsg('min_value', 'Minimum Value Cannot Be Negative', 'error');
+   }
+   else{
+	g_form.hideFieldMsg('min_value');
+   }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;priyam01&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-17 13:45:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d575ac47c35b831043d978cc05013190&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Min_value onChange validation&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Employee Reward Management" source="x_1921751_employ_0"&gt;577127bac3df431043d978cc050131b4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Reward Management"&gt;577127bac3df431043d978cc050131b4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_d575ac47c35b831043d978cc05013190&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;priyam01&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-17 14:04:23&lt;/sys_updated_on&gt;&lt;table&gt;x_1921751_employ_0_reward_catalog&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1502795949</payload_hash>
+        <record_name>Min_value onChange validation</record_name>
+        <reverted_from/>
+        <source>973048cfc3d3831043d978cc05013183</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-17 14:04:23</sys_created_on>
+        <sys_id>1ac37cc3c3db831043d978cc05013134</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0afaecd700000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-17 14:04:23</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>56c37cc303db8310b4691e37122e4333</update_guid>
+        <update_guid_history>56c37cc303db8310b4691e37122e4333:-1502795949,4d83f0c3eddb831038636cab960f9cf3:493011135,481334836cdb831082cecac3d71620cb:-1757491100,d6f27083cbdb8310cad941db1e609a73:-1008373232,9da2744392db8310789ce4be56701881:1790942160,f7f1b8cf549b8310f86025ae0d278261:-1585095361,af51b84f439b8310d30ab000e5053104:-899097829,7c80780ff19b8310bac27f7514872b50:-1498206972,8470b40f719b8310cd4347cd76407a3f:-1808151874,e8bf28871b9b83104420a1712f256522:-942573735,6d7fe80b2c9b8310a967b7fcbf25761c:1151768697</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-17 14:24:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>162ea1768d984f358d3d6968b8970381</sys_id>
+        <sys_metadata>d575ac47c35b831043d978cc05013190</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Min_value onChange validation</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent display_value="Reward Catalog">06410883c317831043d978cc050131eb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sys_script_client_d575ac47c35b831043d978cc05013190</sys_update_name>
+        <sys_update_version display_value="sys_script_client_d575ac47c35b831043d978cc05013190">1ac37cc3c3db831043d978cc05013134</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-17 14:24:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Amount - Mandatory only when reward type is monetary;&#13;
+Leave days - Mandatory only when reward type = Extra Leave Credit&#13;
+</description>
+        <field>reward_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set Mandatory onChange Reward Type</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   var rewardType = g_form.getDisplayValue('reward_type');
+   
+   switch(rewardType){
+	case "Extra Leave Credit":
+		g_form.setMandatory('amount', false);
+		g_form.setMandatory('leave_days', true);
+		break;
+	
+	case "Spot Bonus - High Value":
+	case "Voucher - Gift Card":
+	case "Team Recognition Award":
+		g_form.setMandatory('amount', true);
+		g_form.setMandatory('leave_days', false);
+		break;
+
+	default:
+		break;
+   }
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-18 07:52:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ebd1e417c39b071043d978cc05013165</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Set Mandatory onChange Reward Type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_script_client_ebd1e417c39b071043d978cc05013165</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-18 08:01:34</sys_updated_on>
+        <table>x_1921751_employ_0_reward_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sys_script_client_ebd1e417c39b071043d978cc05013165</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Amount - Mandatory only when reward type is monetary;&amp;#13;
+Leave days - Mandatory only when reward type = Extra Leave Credit&amp;#13;
+&lt;/description&gt;&lt;field&gt;reward_type&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Set Mandatory onChange Reward Type&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   var rewardType = g_form.getDisplayValue('reward_type');
+   
+   switch(rewardType){
+	case "Extra Leave Credit":
+		g_form.setMandatory('amount', false);
+		g_form.setMandatory('leave_days', true);
+		break;
+	
+	case "Spot Bonus - High Value":
+	case "Voucher - Gift Card":
+	case "Team Recognition Award":
+		g_form.setMandatory('amount', true);
+		g_form.setMandatory('leave_days', false);
+		break;
+
+	default:
+		break;
+   }
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;priyam01&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-18 07:52:36&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ebd1e417c39b071043d978cc05013165&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Mandatory onChange Reward Type&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Employee Reward Management" source="x_1921751_employ_0"&gt;577127bac3df431043d978cc050131b4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Reward Management"&gt;577127bac3df431043d978cc050131b4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_ebd1e417c39b071043d978cc05013165&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;priyam01&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-18 08:01:34&lt;/sys_updated_on&gt;&lt;table&gt;x_1921751_employ_0_reward_request&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1739792025</payload_hash>
+        <record_name>Set Mandatory onChange Reward Type</record_name>
+        <reverted_from/>
+        <source>973048cfc3d3831043d978cc05013183</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-18 08:01:34</sys_created_on>
+        <sys_id>515aa4d7c3db071043d978cc0501316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b388fe520000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-18 08:01:34</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>9d5aa4d73cdb0710e10b43990e21da69</update_guid>
+        <update_guid_history>9d5aa4d73cdb0710e10b43990e21da69:1739792025,7c2a6c17b6db071097fcdf274a50ca14:1426224929,370ae897f0db071000363afe5a2f5aa1:-1622067726,d9c9ec57eedb0710c950974e5ce6c3ae:1899166881,7d89245727db07100d0773fdf9a9a004:-2091756415,ea192cd304db071048781fe42ce1836a:-955497038,b948e0935ddb07103f3fb149a507945d:-1152078420</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-19 08:07:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>14eb7a76c1b24d23844a2041eac546e1</sys_id>
+        <sys_metadata>ebd1e417c39b071043d978cc05013165</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Mandatory onChange Reward Type</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent display_value="Reward Request">6ab604cfc317831043d978cc05013165</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sys_script_client_ebd1e417c39b071043d978cc05013165</sys_update_name>
+        <sys_update_version display_value="sys_script_client_ebd1e417c39b071043d978cc05013165">515aa4d7c3db071043d978cc0501316b</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-19 08:07:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

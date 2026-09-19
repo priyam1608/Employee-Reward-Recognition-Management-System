@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>min_max_value onSubmit Validation</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   var cleanMinValue = parseFloat(g_form.getValue('min_value').split(';')[1].replace(',',''));
+   var cleanMaxValue = parseFloat(g_form.getValue('max_value').split(';')[1].replaceAll(',',''));
+
+   if(cleanMinValue < 0){
+	g_form.showFieldMsg('min_value', 'Minimum Value Cannot Be Negative', 'error');
+	return false;
+   }
+
+   if(cleanMaxValue < 0){
+	g_form.showFieldMsg('max_value', 'Maximum Value Cannot Be Negative', 'error');
+	return false;
+   }
+   if(cleanMaxValue < cleanMinValue){
+	g_form.showFieldMsg('max_value', 'Maximum Value Cannot Be Less Than Minimum Value', 'error');
+	return false;
+   }
+
+   return true;
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-17 14:22:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f417f88bc3db831043d978cc05013120</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>min_max_value onSubmit Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_script_client_f417f88bc3db831043d978cc05013120</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-18 05:54:03</sys_updated_on>
+        <table>x_1921751_employ_0_reward_catalog</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sys_script_client_f417f88bc3db831043d978cc05013120</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;min_max_value onSubmit Validation&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+   var cleanMinValue = parseFloat(g_form.getValue('min_value').split(';')[1].replace(',',''));
+   var cleanMaxValue = parseFloat(g_form.getValue('max_value').split(';')[1].replaceAll(',',''));
+
+   if(cleanMinValue &lt; 0){
+	g_form.showFieldMsg('min_value', 'Minimum Value Cannot Be Negative', 'error');
+	return false;
+   }
+
+   if(cleanMaxValue &lt; 0){
+	g_form.showFieldMsg('max_value', 'Maximum Value Cannot Be Negative', 'error');
+	return false;
+   }
+   if(cleanMaxValue &lt; cleanMinValue){
+	g_form.showFieldMsg('max_value', 'Maximum Value Cannot Be Less Than Minimum Value', 'error');
+	return false;
+   }
+
+   return true;
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;priyam01&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-17 14:22:43&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f417f88bc3db831043d978cc05013120&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;min_max_value onSubmit Validation&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Employee Reward Management" source="x_1921751_employ_0"&gt;577127bac3df431043d978cc050131b4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Reward Management"&gt;577127bac3df431043d978cc050131b4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f417f88bc3db831043d978cc05013120&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;priyam01&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-18 05:54:03&lt;/sys_updated_on&gt;&lt;table&gt;x_1921751_employ_0_reward_catalog&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2012073247</payload_hash>
+        <record_name>min_max_value onSubmit Validation</record_name>
+        <reverted_from/>
+        <source>973048cfc3d3831043d978cc05013183</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-18 05:54:03</sys_created_on>
+        <sys_id>252d4c57c3d7071043d978cc050131c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b31440460000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-18 05:54:03</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>612d4c573ad707101119d26dcb3e96c1</update_guid>
+        <update_guid_history>612d4c573ad707101119d26dcb3e96c1:2012073247,dcec88579bd70710644075119f88f158:1981568511,d8bc8c53c2d70710576b0a0fe467a07f:1477181785,f80c445330d70710d5ec9beca998eb2a:-1645135730,f9abcc9318d70710d61e92248cdeb6fd:-933043356,d04640974a97071011e7c80e2d2aea25:1378220018,7af738cb6ddb83105c7c03dc2a50050c:1055758166</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-19 08:17:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>30e3ea5c1e3845528fc5794b8780eeb1</sys_id>
+        <sys_metadata>f417f88bc3db831043d978cc05013120</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>min_max_value onSubmit Validation</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent display_value="Reward Catalog">06410883c317831043d978cc050131eb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sys_script_client_f417f88bc3db831043d978cc05013120</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f417f88bc3db831043d978cc05013120">252d4c57c3d7071043d978cc050131c2</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-19 08:17:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

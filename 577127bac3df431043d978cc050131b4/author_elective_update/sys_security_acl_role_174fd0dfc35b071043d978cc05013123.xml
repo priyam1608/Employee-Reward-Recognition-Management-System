@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-18 07:13:38</sys_created_on>
+        <sys_id>174fd0dfc35b071043d978cc05013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.admin</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_security_acl display_value="">1c1f50dfc35b071043d978cc05013175</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_174fd0dfc35b071043d978cc05013123</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-18 07:13:38</sys_updated_on>
+        <sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sys_security_acl_role_174fd0dfc35b071043d978cc05013123</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-18 07:13:38</sys_created_on><sys_id>174fd0dfc35b071043d978cc05013123</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.admin</sys_name><sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package><sys_policy/><sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope><sys_security_acl display_value="">1c1f50dfc35b071043d978cc05013175</sys_security_acl><sys_update_name>sys_security_acl_role_174fd0dfc35b071043d978cc05013123</sys_update_name><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-18 07:13:38</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-339546086</payload_hash>
+        <record_name>.admin</record_name>
+        <reverted_from/>
+        <source>973048cfc3d3831043d978cc05013183</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-18 07:13:38</sys_created_on>
+        <sys_id>9b5f5cdfc35b071043d978cc05013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b35d1c160000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-18 07:13:38</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>5b5f5cdf555b0710c84273538815bd06</update_guid>
+        <update_guid_history>5b5f5cdf555b0710c84273538815bd06:-339546086</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".admin">f2bf9813c39b071043d978cc050131f2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-18 07:15:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1a7c4c4a73464050833b9ddb1af72100</sys_id>
+        <sys_metadata>174fd0dfc35b071043d978cc05013123</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.admin</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent display_value="RewardUtils">1c1f50dfc35b071043d978cc05013175</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_174fd0dfc35b071043d978cc05013123</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_174fd0dfc35b071043d978cc05013123">9b5f5cdfc35b071043d978cc05013107</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-18 07:15:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

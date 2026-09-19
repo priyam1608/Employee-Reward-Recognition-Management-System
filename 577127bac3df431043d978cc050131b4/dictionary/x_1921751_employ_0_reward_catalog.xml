@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="06410883c317831043d978cc050131eb" label="Reward Catalog" max_length="40" name="x_1921751_employ_0_reward_catalog" type="collection">
+        <element label="Max Value" mandatory="true" max_length="20" name="max_value" type="currency"/>
+        <element label="Requires HR Approval" mandatory="true" max_length="40" name="requires_hr_approval" type="boolean"/>
+        <element label="Requires Finance Approval" mandatory="true" max_length="40" name="requires_finance_approval" type="boolean"/>
+        <element default="true" label="Active" mandatory="true" max_length="40" name="active" type="boolean"/>
+        <element default="0" label="Min Value" max_length="20" name="min_value" type="currency"/>
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <element choice="1" display="true" label="Reward Type" mandatory="true" max_length="255" name="reward_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Extra Leave Credit" sequence="400" value="extra_leave_credit"/>
+                <element inactive_on_update="false" label="Spot Bonus - High Value" sequence="200" value="spot_bonus_high"/>
+                <element inactive_on_update="false" label="Voucher - Gift Card" sequence="300" value="voucher_gift_card"/>
+                <element inactive_on_update="false" label="Team Recognition Award" sequence="500" value="team_recognition_award"/>
+                <element inactive_on_update="false" label="Spot Bonus" sequence="100" value="spot_bonus"/>
+            </choice>
+        </element>
+    </element>
+</database>
