@@ -28,19 +28,33 @@ RewardUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var year = this.getParameter('sysparm_year');
 	},
 
+	getRewardTypeDetails: function(){
+		var rewardId = this.getParameter('sysparm_reward_id');
+		
+		var rewardCatalogGr = new GlideRecordSecure('x_1921751_employ_0_reward_catalog');
+		if(rewardCatalogGr.get(rewardId)){
+			return JSON.stringify({
+				name: rewardCatalogGr.getValue('reward_type'),
+				minValue: rewardCatalogGr.getValue('min_value'),
+				maxValue: rewardCatalogGr.getValue('max_value'),
+			});
+		}
+		return "Not Found";
+	},
+
     type: 'RewardUtils'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>priyam01</sys_created_by>
         <sys_created_on>2026-09-18 07:02:34</sys_created_on>
         <sys_id>764b5857c35b071043d978cc050131cd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>RewardUtils</sys_name>
         <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
         <sys_update_name>sys_script_include_764b5857c35b071043d978cc050131cd</sys_update_name>
         <sys_updated_by>priyam01</sys_updated_by>
-        <sys_updated_on>2026-09-18 07:11:24</sys_updated_on>
+        <sys_updated_on>2026-09-21 10:17:17</sys_updated_on>
     </sys_script_include>
 </record_update>

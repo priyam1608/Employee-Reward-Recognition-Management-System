@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field>leave_days</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-21 08:13:18</sys_created_on>
+        <sys_id>f4b9cc54c36f0f1043d978cc050131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>leave_days</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_ui_policy_action_f4b9cc54c36f0f1043d978cc050131bb</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-21 08:13:18</sys_updated_on>
+        <table>x_1921751_employ_0_reward_request</table>
+        <ui_policy display_value="Show Amount Field">94c84014c36f0f1043d978cc05013122</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=f4b9cc54c36f0f1043d978cc050131bb"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sys_ui_policy_action_f4b9cc54c36f0f1043d978cc050131bb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>true</cleared><disabled>ignore</disabled><field>leave_days</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-21 08:13:18</sys_created_on><sys_id>f4b9cc54c36f0f1043d978cc050131bb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>leave_days</sys_name><sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package><sys_policy/><sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope><sys_update_name>sys_ui_policy_action_f4b9cc54c36f0f1043d978cc050131bb</sys_update_name><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-21 08:13:18</sys_updated_on><table>x_1921751_employ_0_reward_request</table><ui_policy display_value="Show Amount Field">94c84014c36f0f1043d978cc05013122</ui_policy><value/><value_action>ignore</value_action><visible>false</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=f4b9cc54c36f0f1043d978cc050131bb"/></record_update>]]></payload>
+        <payload_hash>43936595</payload_hash>
+        <record_name>leave_days</record_name>
+        <reverted_from/>
+        <source>698b2bc0c36b0f1043d978cc05013129</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-21 08:13:18</sys_created_on>
+        <sys_id>e2c90494c36f0f1043d978cc0501316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0c306d0370000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-21 08:13:18</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>a2c904942d6f0f10378e97d9e206676d</update_guid>
+        <update_guid_history>a2c904942d6f0f10378e97d9e206676d:43936595</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-21 09:30:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>36e4a1741869472f91a8ece39bad27d1</sys_id>
+        <sys_metadata>f4b9cc54c36f0f1043d978cc050131bb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>leave_days</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_f4b9cc54c36f0f1043d978cc050131bb</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_f4b9cc54c36f0f1043d978cc050131bb">e2c90494c36f0f1043d978cc0501316e</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:30:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

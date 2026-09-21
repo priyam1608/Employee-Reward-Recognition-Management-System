@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sc_cat_item display_value="Voucher / Gift Card Request">722757b7c3578b1043d978cc0501318b</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-20 09:53:41</sys_created_on>
+        <sys_id>4327d7b7c3578b1043d978cc05013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reward Common Variables.Copy of Spot Bonus Request</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>io_set_item_4327d7b7c3578b1043d978cc05013186</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-20 09:53:41</sys_updated_on>
+        <variable_set display_value="Reward Common Variables">6105baabc3dfc71043d978cc05013112</variable_set>
+    </io_set_item>
+</record_update>

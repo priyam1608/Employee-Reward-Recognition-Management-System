@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Spot Bonus Request">9f237aa7c3dfc71043d978cc050131d2</sc_cat_item>
+        <sc_category display_value="Reward Management">b16372e7c3dfc71043d978cc0501313d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-19 12:40:41</sys_created_on>
+        <sys_id>bbc3fee7c3dfc71043d978cc05013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reward Management.Spot Bonus Request</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sc_cat_item_category_bbc3fee7c3dfc71043d978cc05013140</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-19 12:40:41</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

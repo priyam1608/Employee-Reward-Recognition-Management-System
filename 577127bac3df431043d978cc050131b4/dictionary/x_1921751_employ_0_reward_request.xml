@@ -16,7 +16,7 @@
             </choice>
         </element>
         <element label="Rejection Comments" max_length="4000" name="rejection_comments" type="string"/>
-        <element choice="1" label="Status" max_length="255" name="status" type="string">
+        <element choice="3" default="draft" label="Status" max_length="255" name="status" type="string">
             <choice>
                 <element inactive_on_update="false" label="Pending Finance Approval" sequence="400" value="pending_finance"/>
                 <element inactive_on_update="false" label="Rejected - Final" sequence="700" value="rejected_final"/>

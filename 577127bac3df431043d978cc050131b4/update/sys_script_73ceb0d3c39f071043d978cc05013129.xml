@@ -15,7 +15,7 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_1921751_employ_0_reward_request">status=rejected_editable^EQ<item display_value="Rejected - Editable" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="rejected_editable"/>
+        <filter_condition table="x_1921751_employ_0_reward_request">statusCHANGESFROMrejected_editable^EQ<item display_value="Rejected - Editable" endquery="false" field="status" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="rejected_editable"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -31,10 +31,12 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	current.resubmission_count = current.resubmission_count + 1;
-	if(current.resubmission_count > 2){
-		gs.addErrorMessage("Rejected Request can not be resubmitted again more than 2 times");
-		current.setAbortAction(true);
+	if(current.getDisplayValue('sys_created_by') == current.getDisplayValue('sys_updated_by')){
+		current.resubmission_count = current.resubmission_count + 1;
+		if(current.resubmission_count > 2){
+			gs.addErrorMessage("Rejected Request can not be resubmitted again more than 2 times");
+			current.setAbortAction(true);
+		}
 	}
 
 
@@ -45,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>73ceb0d3c39f071043d978cc05013129</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Update resubmission_count BR </sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
@@ -53,7 +55,7 @@
         <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
         <sys_update_name>sys_script_73ceb0d3c39f071043d978cc05013129</sys_update_name>
         <sys_updated_by>priyam01</sys_updated_by>
-        <sys_updated_on>2026-09-18 09:51:02</sys_updated_on>
+        <sys_updated_on>2026-09-21 10:59:15</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
