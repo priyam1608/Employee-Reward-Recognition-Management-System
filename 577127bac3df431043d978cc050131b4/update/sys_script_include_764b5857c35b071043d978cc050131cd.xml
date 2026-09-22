@@ -26,6 +26,18 @@ RewardUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var dept = this.getParameter('sysparm_dept');
 		var quarter = this.getParameter('sysparm_quarter');
 		var year = this.getParameter('sysparm_year');
+
+		var deptRewardBudgetGr = new GlideRecordSecure('x_1921751_employ_0_department_reward_budget');
+		deptRewardBudgetGr.addQuery('department', dept);
+		deptRewardBudgetGr.addQuery('quarter', quarter);
+		deptRewardBudgetGr.addQuery('year', year);
+		deptRewardBudgetGr.setLimit(1);
+		deptRewardBudgetGr.query();
+
+		if(deptRewardBudgetGr.next()){
+			return deptRewardBudgetGr.getValue('remaining_budget');
+		}
+		return '';
 	},
 
 	getRewardTypeDetails: function(){
@@ -42,19 +54,48 @@ RewardUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		return "Not Found";
 	},
 
+	fetchRewardType: function(){
+		var rewardName = this.getParameter('sysparm_reward_name');
+		var rewardType = '';
+
+		switch(rewardName){
+			case 'Spot Bonus - High Value':
+				rewardType = gs.getProperty('x_1921751_employ_0.spot_bonus_reward_type');
+				break;
+			
+			case 'Team Recognition Award':
+				rewardType = gs.getProperty('x_1921751_employ_0.team_recognition_award_reward_type');
+				break;
+
+			case 'Extra Leave Credit':
+				rewardType = gs.getProperty('x_1921751_employ_0.extra_leave_credit_reward_type');
+				break;
+
+			case 'Voucher Gift Card':
+				rewardType = gs.getProperty('x_1921751_employ_0.voucher_gift_card_reward_type');
+				break;
+
+			default:
+				rewardType = 'nil';
+				break;
+		}
+
+		return rewardType;
+	},
+
     type: 'RewardUtils'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>priyam01</sys_created_by>
         <sys_created_on>2026-09-18 07:02:34</sys_created_on>
         <sys_id>764b5857c35b071043d978cc050131cd</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>RewardUtils</sys_name>
         <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
         <sys_update_name>sys_script_include_764b5857c35b071043d978cc050131cd</sys_update_name>
         <sys_updated_by>priyam01</sys_updated_by>
-        <sys_updated_on>2026-09-21 10:17:17</sys_updated_on>
+        <sys_updated_on>2026-09-22 06:15:24</sys_updated_on>
     </sys_script_include>
 </record_update>

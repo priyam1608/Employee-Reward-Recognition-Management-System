@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1921751_employ_0.extra_leave_credit_reward_type</name>
+        <read_roles/>
+        <suffix>extra_leave_credit_reward_type</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 06:03:37</sys_created_on>
+        <sys_id>fb953068c327cf1043d978cc050131bd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_1921751_employ_0.extra_leave_credit_reward_type</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_properties_fb953068c327cf1043d978cc050131bd</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 06:06:17</sys_updated_on>
+        <type>string</type>
+        <value>657dcc97c3d7071043d978cc050131ef</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=fb953068c327cf1043d978cc050131bd"/>
+</record_update>
