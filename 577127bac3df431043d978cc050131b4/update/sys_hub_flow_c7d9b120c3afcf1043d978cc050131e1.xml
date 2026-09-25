@@ -1,0 +1,2293 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=242510000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>budget_amp_cap_validation</internal_name>
+        <label_cache>[{"name":"flow_variable.total_amount","label":"Flow Variables➛Total Amount","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"1e8519d9-74c5-4724-b097-45866a754970":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e41ff261-a39d-4cec-9844-385ec8f8d6d0"}},{"name":"flow_variable.total_amount_sum","label":"Flow Variables➛Total Amount Sum","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"d6b7edbf-8c6d-476b-9b8c-6543b3006a2f":["total_amount_sum-0","total_amount-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5cfbd958-bb5f-453b-acec-5c3e0d83efc9"}},{"name":"flow_variable.count","label":"Flow Variables➛Count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"1e8519d9-74c5-4724-b097-45866a754970":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5478819c-eb6c-49f5-abfc-7ba8511c2cbf"}},{"name":"7f8f1405-7291-463b-af14-be59929e3624.item.amount","label":"8➛Employee Reward History Record➛Amount","reference":"","reference_display":"Amount","type":"currency","base_type":"currency","parent_table_name":"x_1921751_employ_0_employee_reward_history","column_name":"amount","usedInstances":{"d779297a-2606-4e38-948f-5e30cb8f48cb":["total_amount_sum-0"]}},{"name":"acfd11e6-40d2-4695-a0bf-7c5b4b553a94.Records","label":"6 - Look Up Records➛Employee Reward History Records","reference":"x_1921751_employ_0_employee_reward_history","reference_display":"Employee Reward History","type":"records","base_type":"records","usedInstances":{"7f8f1405-7291-463b-af14-be59929e3624":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"acfd11e6-40d2-4695-a0bf-7c5b4b553a94.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"bbb638f5-2248-47b0-9fd4-8fd20a6a2241":["count-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.reward_request","label":"Input➛Reward Request","reference":"x_1921751_employ_0_reward_request","reference_display":"Reward Request","type":"reference","base_type":"reference","usedInstances":{"b626946f-019a-4888-bcb0-fd820b516892":[null],"acfd11e6-40d2-4695-a0bf-7c5b4b553a94":[null]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ce3df3c4-374a-4e12-9d37-00c2aafa8197","uiTypeLabel":"Reference"}},{"name":"subflow.reward_request.employee","label":"Input➛Reward Request➛Employee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1921751_employ_0_reward_request","column_name":"employee","usedInstances":{"b626946f-019a-4888-bcb0-fd820b516892":[null],"acfd11e6-40d2-4695-a0bf-7c5b4b553a94":[null]}},{"name":"6a8666e9-d31e-45b2-9b30-37de66589bc9.Record.remaining_budget","label":"1 - Look Up Record➛Department Reward Budget Record➛Remaining Budget","reference":"","reference_display":"Remaining Budget","type":"currency","base_type":"currency","parent_table_name":"x_1921751_employ_0_department_reward_budget","column_name":"remaining_budget","usedInstances":{"d1d18c02-dbf2-489d-b23f-a8c667b3f0bd":["condition"]}},{"name":"subflow.reward_request.amount","label":"Input➛Reward Request➛Amount","reference":"","reference_display":"Amount","type":"currency","base_type":"currency","parent_table_name":"x_1921751_employ_0_reward_request","column_name":"amount","usedInstances":{"d1d18c02-dbf2-489d-b23f-a8c667b3f0bd":["condition"]}},{"name":"subflow.reward_request.year","label":"Input➛Reward Request➛Year","reference":"","reference_display":"Year","type":"integer","base_type":"integer","parent_table_name":"x_1921751_employ_0_reward_request","column_name":"year","usedInstances":{"6a8666e9-d31e-45b2-9b30-37de66589bc9":[null,"conditions"]}},{"name":"subflow.reward_request.quarter","label":"Input➛Reward Request➛Quarter","reference":"","reference_display":"Quarter","type":"choice","base_type":"choice","parent_table_name":"x_1921751_employ_0_reward_request","column_name":"quarter","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"x_1921751_employ_0_reward_request","dependent_values":[""],"dependent_values_map":{"":"Q1"}},"sequence":100.0,"selected":false,"label":"Q1","used":false,"image":"","reference":false,"rawLabel":"Q1","missing":false,"value":"q1"},{"parameters":{"name":"x_1921751_employ_0_reward_request","dependent_values":[""],"dependent_values_map":{"":"Q2"}},"sequence":200.0,"selected":false,"label":"Q2","used":false,"image":"","reference":false,"rawLabel":"Q2","missing":false,"value":"q2"},{"parameters":{"name":"x_1921751_employ_0_reward_request","dependent_values":[""],"dependent_values_map":{"":"Q3"}},"sequence":300.0,"selected":false,"label":"Q3","used":false,"image":"","reference":false,"rawLabel":"Q3","missing":false,"value":"q3"},{"parameters":{"name":"x_1921751_employ_0_reward_request","dependent_values":[""],"dependent_values_map":{"":"Q4"}},"sequence":400.0,"selected":false,"label":"Q4","used":false,"image":"","reference":false,"rawLabel":"Q4","missing":false,"value":"q4"}],"usedInstances":{"6a8666e9-d31e-45b2-9b30-37de66589bc9":[null,"conditions"],"b626946f-019a-4888-bcb0-fd820b516892":[null],"acfd11e6-40d2-4695-a0bf-7c5b4b553a94":[null]}},{"name":"subflow.reward_request.department","label":"Input➛Reward Request➛Department","reference":"cmn_department","reference_display":"Department","type":"reference","base_type":"reference","parent_table_name":"x_1921751_employ_0_reward_request","column_name":"department","usedInstances":{"6a8666e9-d31e-45b2-9b30-37de66589bc9":[null,"conditions"]}},{"name":"undefined","label":"17 - End Subflow","type":"END","base_type":"END","usedInstances":{"6a8666e9-d31e-45b2-9b30-37de66589bc9":[null],"b626946f-019a-4888-bcb0-fd820b516892":[null]},"attributes":{}},{"name":"6a8666e9-d31e-45b2-9b30-37de66589bc9.Record","label":"1 - Look Up Record➛Department Reward Budget Record","reference":"x_1921751_employ_0_department_reward_budget","reference_display":"Department Reward Budget","type":"reference","base_type":"reference","usedInstances":{"0e09c03e-98b1-4479-ae0d-41df8ab0811f":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>2e524ee0c3efcf1043d978cc0501314f</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Budget &amp; Cap Validation</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:01:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c7d9b120c3afcf1043d978cc050131e1</sys_id>
+        <sys_mod_count>88</sys_mod_count>
+        <sys_name>Budget &amp; Cap Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_hub_flow_c7d9b120c3afcf1043d978cc050131e1</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:43:40</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>b3f6d469c36bc75043d978cc0501315e</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c7d9b120c3afcf1043d978cc050131e1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c7d9b120c3afcf1043d978cc050131e1"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c7d9b120c3afcf1043d978cc050131e1^id=c7d9b120c3afcf1043d978cc050131e1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c7d9b120c3afcf1043d978cc050131e1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c7d9b120c3afcf1043d978cc050131e1^sys_idNOT IN83d9b120c3afcf1043d978cc050131e2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c7d9b120c3afcf1043d978cc050131e1</id>
+        <name>Budget &amp; Cap Validation</name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:01:26</sys_created_on>
+        <sys_id>83d9b120c3afcf1043d978cc050131e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:01:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=83d9b120c3afcf1043d978cc050131e2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c7d9b120c3afcf1043d978cc050131e1^sys_idNOT IN7a2a31a0c3afcf1043d978cc0501314c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ce3df3c4-374a-4e12-9d37-00c2aafa8197</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1921751_employ_0_reward_request</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reward_request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Reward Request</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</model>
+        <model_id>c7d9b120c3afcf1043d978cc050131e1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c7d9b120c3afcf1043d978cc050131e1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="x_1921751_employ_0_reward_request">x_1921751_employ_0_reward_request</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:02:47</sys_created_on>
+        <sys_id>7a2a31a0c3afcf1043d978cc0501314c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:02:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7a2a31a0c3afcf1043d978cc0501314c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c7d9b120c3afcf1043d978cc050131e1^sys_idNOT IN901b3124c3afcf1043d978cc05013157"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b05bb53d-7ff8-4a17-9019-590a00a7c01f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>result</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</model>
+        <model_id>c7d9b120c3afcf1043d978cc050131e1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_c7d9b120c3afcf1043d978cc050131e1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:06:42</sys_created_on>
+        <sys_id>901b3124c3afcf1043d978cc05013157</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=901b3124c3afcf1043d978cc05013157"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c7d9b120c3afcf1043d978cc050131e1"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c7d9b120c3afcf1043d978cc050131e1"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=c7d9b120c3afcf1043d978cc050131e1^sys_idNOT INc11cf1a4c3afcf1043d978cc05013165,da4a35a0c3afcf1043d978cc05013197"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:11:08</sys_created_on>
+        <sys_id>c11cf1a4c3afcf1043d978cc05013165</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:15</sys_updated_on>
+        <ui_id>acfd11e6-40d2-4695-a0bf-7c5b4b553a94</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VXW1PiMBT+K0yfO0xLAS9vO7rO7oM6o44vrmbSNkBmQ1KTlIsM/31PmqQgoCLLuvpGTs7lOyffl4a7WUDz4Dg47LWjCMedw4MoSpIo6naTDMdpmnSzNErbaRAGHA8JeGqcMgLLEWalWU9QfNSKDzoxIsOCiSmK3A9CkCRjLHM0oEoLOYWgnKqC4emti/3uHBtXlWPjR+2YDSjLJeHB8d19GBRYQnFNZHA8W9nS04IghlPCIN+Nwda4MEDDrft6Frzepyngl4jb1ELmBksUBmSiCc8JlOphpkgYDDHPcdWEt0iC80vOFoYB5RoyBsZ5ougTpD+MjF+PQFsZsXv1ErmhWXM2EDQjl4WmgluLBWo3BSuH/MI2YMZNerhk2o8bLKWCfKQwmA0Ih6h3PRDjK1/wjPKqPbfJRIZZvcJaS5qWmihzFoSRISRCQ1wUlPdRIcWIVsGAZdjsM1g0e0yMoaiifd7EmQHehBHh5hnYTyvzLZbUdHEOaSAYAFEGp43s0JUoZTWVEcpYqaoNibmyuYJ5NSv0WBqUtmvXH7IjAgeVSVrobxAwIq6VebgV9TvRghKZ4Dk1NdUS/z3Zf5UQns9mqkxNw03HfUkeS6J007vN5w+AVEITbwQ4r/l8XTYfUXI3AZ4sT2jb6W4M3jRyJ8VnNifFeG9SBLj/SYxalp9Pi2+pyzb8hsSyg1dJ0FmctxJSIzu5JY2tS2Bnhp5RwvJnn4gtwPngS0O2Rjp9Ca8jaM/UWPlWtL78t+JT0hMA5cjOm3JGefWpBqD74W30+uV1tMKD6vgXrK1sWGXr7MUNLRpPu9+y1bl6/m4B0gdeA6LGjUW5Abi/X316R91kb9RNWu+jLhDnblajr6e2YcD+RWaOzvs/GX+86g/sWgqI5/c19U92qxm/t2bL1FzRZvIucS4zy+6cvkCwPb/3XhBb+C/VPYBQVw9ZsaIxzftEL6p7r1zoMWa/N+07dtUaqtr767dj+1XtdeOFzkAD8M5ScFTLj8cYHhvr10McWvNut8NPrkm/Gt62EH3kOZ7APzGPcSNwd0XQuobjdHuP76+P+Lz5wW9Uj5//l/iztCuF7/8A0AT1XfsPAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c11cf1a4c3afcf1043d978cc05013165"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:03:18</sys_created_on>
+        <sys_id>da4a35a0c3afcf1043d978cc05013197</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:15</sys_updated_on>
+        <ui_id>6a8666e9-d31e-45b2-9b30-37de66589bc9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1XTW/jNhD9K4LOjitZtmXn1m5gYIG2AbJpLtstQYlUTJQmtRSVxDH83zuUKMmxFVv+CLoFejJMznDevHnDob6uXEbca3dEvGkynY4moecFgeeNx0GM/SgKxnHkRZHv9lyBFxQsM6k00suUwtIT5nm9hrMYlgjLUo6XD3YHO1o6r7Aezxknigr3+uu3nptiBadpqtzr1daWORpxHFEO7p/mksUmUleQleMXQOTclyhbgBc/1xDZHi8VMViCnktfNBWEQrgE84z23AUWBGuplvWKopjcCt4szJnQcJprjF8y9gpHBwNjl1BIK6blXv0XWY7K5RJDBsmvavQ1ay0EW6jeutfYvxp7vG1P6KaDvwZyCU1wzvWn02L6x8YcmJhlgrepZhJK7AaGfhxxy0oseb4Qv5clcmuEDy3KKndu3hFYngGxNDXFM9WwpUm+zOXzXcX8jIkCl93kMsa8/oe1VizKteFl5SYEJYxygpjgTJhIWuVGKpTTBURAC5ymTDyiVMknVpwKuSz6jxz+9BMunw0X7FH0cWwy74OIcH8G6zfF8gNWzLDwGxwDzj0TcA6uNh7KYsVSjZ4ZeaS6iV5ZEamfMf+7bd+qq+6hIj13XQgQfc9NxiXRlitUlMUYlDF/BrxP1NJiKl70nr+39zDZ6rOyrBvq2L0aTr4UZqYuTiGZXmdwlfOtUaYTLd/Da2+GsvaijFGp+WK3w8Q77naom+eo3tltCiOSM3riA6Xf1muHJFsycUi3070zY9rogCVoAeyxlFOkaAxFzxBWFCUyFwSVqWwI2lCbMJVpa7wr8DuqcyUcCWJw9Jw6hbVTW19iInbIrnL8nDhVehZD5kB6TpGeU6d3HBnvzNHhxTpleGSnvJ1pM8x4QX2mabpRO6qUVO/M0gNV21P+joO2Iyj/oqDOn8Rtem+dyAewXnhOf8yddO60jCmOhgM8DgPf9zzfI6E3CUN/Mo6SMQ6HSdNoCGUihnEOJycgDDgeVUKoqurvXi122p92hdyD80+z4lXQ6wy3cr6R4s/c8wahdgxeKLNT4T2ckb0uIik5xaJR5+hfuy8uNVnPlXHO7re5KZd+bSvaRw3inP0h2PecfjaimFBvMPFJfDUJ/fBqmJDx1ZTg0RWeRqMwIDQeJuc/K8lo78ttYzzHUhBmssg2WgOiYaUNF0aUAVmtsjwyifcVfcaKwF0F6WS63xiu138BWgVtcsDFWoH9kuJDxsZkvd5t1B8P4InPjk32u1au1bmtnNUzYnOtGoMXvBq8/5/d3Udcp9c12fv+xMOm3uVxTee+IH868MORj+gi5XKJPNS0ALLijfLi63anq25qS+eusHR+qSxPHIkG3ZtPyg6ZvXHezdSKuvi79SXp/ee/JH/MZxsAYhyqjUrSM5mrgpUnFPM8KzYUFpn9fDl1dn37BxHA42o1FQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=da4a35a0c3afcf1043d978cc05013197"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c7d9b120c3afcf1043d978cc050131e1"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c7d9b120c3afcf1043d978cc050131e1^sys_idNOT IN145658e5c36bc75043d978cc0501318d,293b3524c3afcf1043d978cc050131fe,3b2d3928c3afcf1043d978cc050131a2,47e04a20c3efcf1043d978cc050131b5,492e79a8c3afcf1043d978cc0501319b,55a106a0c3efcf1043d978cc0501311e,6bbc79e4c3afcf1043d978cc0501312a,a2c65029c36bc75043d978cc0501318c,a6f18ea0c3efcf1043d978cc05013155,c7e14ea0c3efcf1043d978cc050131d6,d0f6d069c36bc75043d978cc05013129,da8b7560c3afcf1043d978cc050131ee,ea1f75a4c3afcf1043d978cc050131fb,eed69c29c36bc75043d978cc050131e7,ffaa71e0c3afcf1043d978cc0501319b"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51f6d069c36bc75043d978cc050131f8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-25 06:20:27</sys_created_on>
+        <sys_id>145658e5c36bc75043d978cc0501318d</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:43:29</sys_updated_on>
+        <ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K8jPaZUPktG+IRgSEtAJKiQ0oejGuaHWXDuznZau6n/fdZK2aHQbiD3uLT732j7n+B5lzXTj6sbZqT61VjwpNv76GDChPEbfayZKNmZVCFU04hFP4iyJwzA+OY6KLCmiuEwAIWEBUzBH6uRalcIJrfIWCNgCZOMLboYGj4Q9OscajJujclQtha0lrO7/2MRnQpYGe25UoJMdGjZe/1J6K1cJBUpqPduSPbpqkd+rcKva49YZoZ769VV/yt0W1Kb0rKIwYPjsUJVIfCqQFgM2B1WC02a1QwxCOVFyD8wEqR0z5pufrfhBF8Zp6hsrckVx7Iq7Zd6b18HVOTggKg13jelb+UwLjrYzp8QKGunOXmJdw6T2UrstDgq53a1lM1c3nSNsd8D2rQhpLJHA2iv11Hsd1d1ML2+3LC+Eal3pi1JzkLsVOPKuaJzns2Yo0b94Poe6Jkfz2uiFaDcTl/nwSdJiWEm9pEv9rA6Be+JDMhaGF4Sft/A9GOFVXNMxtLmjWYAVPG/n2s+ZIQmbgNmVPZNg7V4kuZt/bzzFTnIvLu/88Vu4EbU7pZsX2OvYBH1MRpBWaRSmh0fvODswYC8Ssl5ncJJlGY4GZRLh4Dgt4sGoSMJB8qnELEtPRgUfDW+R06BtNpd3N5Pp5+sv04fXOfrIUe9L2xskv0rbYRveE7H4LxHz7/vGhIVh+D9iH46YsHkXjF5be/k/TNijj0l3585rLixRm3rscvu/8oUVDZfgL6GlNt+8qD22+QllxHp/+QYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8a520ee0c3efcf1043d978cc05013182</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>result</outputs_assigned>
+        <parent_ui_id>d1d18c02-dbf2-489d-b23f-a8c667b3f0bd</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:07:20</sys_created_on>
+        <sys_id>293b3524c3afcf1043d978cc050131fe</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:43:30</sys_updated_on>
+        <ui_id>75676918-7882-4569-8a68-d45ab81021bd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41TyW4iMRD9lchnQO4BxHLLokhImYk0YXIZRajaLoOF2+54gTCIf58y3SxKLrl1Pdfy3qvqPXMp1imGubsNQS8tm/7dMy3ZlE14UfaLHwPRByVUwQd9ORmNheBDXvSL4Yh1mIUKKdNjSCZSvAGTMnBnnFijnN7MbEhKaaHRxpu7JJeY06QOtYHd6/eyxUob6TEze+uwGjwNjejZlHha+rBgnrRdU6Mvyd/VYaBEcy3ks7C4q3Mcotd22cZPbdHLCXReZlpFh+FHRCuRpiswATusAishOr87Ix5BPltzAVYkptFQwUfQ/2jemHOeMxWSIoHN6zlctDY2sHqACEQliZg8nsxwWmBovJCogMTcX2NNwnMdtbNNSYTSnKqdSZX91TjBzg1OWyMkBSKBdZaaubdC1MvKbX+fWD5qe3SlfaRVgzlHEMm7MsXMZ8+Snn+yuUG+GI0GK5q4qKCuCVnU3m30cQqRrnpLQ0FPGbcldvmmeyCywh6tAHqPhD8c4VfwOsv9SW2oOI/7Y/V7wlk+m5IPy3LYl92RUuPuAIpRly5p0h1OOHAOI8ELxQ4dFnbh3kAIF6NoQ4v3lGU2trUGLRqPc4nwuo63RGqDrReHfK02/4jNZjYtt/PyhA4kYZ6x2VWe3NGpanENbZ1fZ/EX7PAfCpwjXOYDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca520ee0c3efcf1043d978cc0501318c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:15:57</sys_created_on>
+        <sys_id>3b2d3928c3afcf1043d978cc050131a2</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:43:30</sys_updated_on>
+        <ui_id>7f8f1405-7291-463b-af14-be59929e3624</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miK9wl7xVrSpVurtKadWXUxUt9pJYZ2zONkk5xH+/dSC06mOfYMe7szODGZjpfNt592xunJMHzba/XyMmdcDofWAaGmRbJj02jkXsBKoL9TAAr0WaYrkqEpGtinKzXkFS1atvfF0V1Xqdw6aId8iNFW4caVRI1yroX77OwI9SCYuzyBYsafNo2Xb4dCQFLUg3ot6kyYbnWZlnSZJ9L9KqzKs0EzmgKIlQQYWKWh9md5/M+r4NpZ0kzMCPeWa3oPQIIrIkYvjmUQuk9TUohxFrQAvwxvZs621HgEUQj1r1S8dRak90LPS+OfmPNqZJEhprJEMcp8Ol3M85TnB9Bx6eiJr7zs6t/GgkRzdFIbCGTvnbj9jU8Nh6afQ04qFS12mjukb/mpJgC8H1sxHSORKBbTAapM8+6qejOe+uKu+lvoQyHyrDQS0VeG9l1fmgZ2CosCGifQNtK/Vh31pzkpdh0tLEB0VFXCtzpqXhisbAg/CYcoX4nvC7C/wCVgYXP4mGhseIud7dKnDu3QuFuP/bBSWTs9nDfoohjHArW39DC044yx1fw62fuJdMuXQk4TlgD9d/JRz0dIMk/widjf0TxL9j439fVdO6dQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0e520ee0c3efcf1043d978cc0501319d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned>total_amount</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:32:18</sys_created_on>
+        <sys_id>47e04a20c3efcf1043d978cc050131b5</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:43:30</sys_updated_on>
+        <ui_id>d6b7edbf-8c6d-476b-9b8c-6543b3006a2f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBn25As2ZF9CxIECNA2QOPmUgTCmlw6RClS4cOJa/jfu7TkB5IeeuslN3G4j5nhLrRlNoY2Br+wV96rlWHzn08DpkzC6HvLlGBzVsgsr3Cc8QIll3lWFmJ2WXGeTbK8yGeXbMAMNEiRwQbQNTQ2mkDoGnRM8HYrRR0cGC+ta+aVWOY5iOkQeZkPSy74EIpiPCyL8WQis4ksJnK3o3yhfKth89iXIYQ/Ky0c9kRbcNQ3oGPz7burfyWuYYmaQm+VAX2xSPwvrg78/64qbNqEKhNwRa074Etf5+6IWicSsWLA8C2gEUiMJGiPA9aAERCs2xwRhyDujT4Bz1S+k9zAm1e/qWOZpTiJpJH3dhyPdW9VB8sbCPAQXOQhuqNzVnH0nTsCJUQdrs+xLuC+DcqaLiXAUh+yrY6N+db5wY4Fzl4meiKBbRKamPcy5MOzff1+YEkm7z3pL7XloI8nCMGpZQyJz5ZFtXhvcwd9NBo1NtSzbqBtlVnVrbNrte9DtJvRStNhJLV9JX5pyEfAk8YRPQGMbgm/2cOP4FQS/JXK9P1+GPUS8S6NEpa5lONpTpM6EzSzyIezqiyHRTVBXslKTEXGdgPmN/5ag/cnq+iN6peYhHbG9RbVncsphTvVhisitcbejd1TWp6Oz+cifi7i5yL+x0UUyJUnnotE6u7wb0wXG5pLxc+hV+t+JYUnbPcH5KpoA2UHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c6520ee0c3efcf1043d978cc0501319b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned>total_amount_sum</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>7f8f1405-7291-463b-af14-be59929e3624</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:20:09</sys_created_on>
+        <sys_id>492e79a8c3afcf1043d978cc0501319b</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:43:30</sys_updated_on>
+        <ui_id>d779297a-2606-4e38-948f-5e30cb8f48cb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy2rbQBT9lTCrFiwj25Ese2cSAoG2gdrNJgRxNQ976GhGmYcd1/jfe8eSH5RSCl0VvNM99zHnnJmLdsQE3wTvFmbmnFxqMn157RGpI4bfOyIZmZK8ADFmOaUjEFQM0tsRm4wLStMsHYwGoiA9oqHmWOmNB1VCbYL2pQs1ZtagQkztdoKV3oJ2wth6Op7kPGf5OBmkeZXgxCKBohgmMMjSKh9MxsOq2u+xn0nXKNg+/+MYupKKWd4pbMAiYc8tme5+Sf2tYgUVV1i6iJJvZgfJNx/m3kq9/PhHR/y2iRl3KO3iT920+RE0lkV2wx7h755rxpGWAOV4j9SgGXhjtyfEcmBPWp2BldQep5FY/O7kDzyvSNM0VgqOUilvs6ew7GxuYXEPHpBKoD7YrpSujKTctSYxLiAof3eJtQVPjZdGty0eKnXsNirU+kvrCTkNON4qIsEhCd5EqZF7J0TMV2bz9cjyQeqDK11SGQrqFIFH76rgI58dCXLxO1u54jXOL2toGkTKxpq1PMxEinV/qTDoC2U2yCUuRB9o1NNHw6H/gPj9AX4GK6O4zzgGm3vdcZe3GuQ3Ld8Cf4zvKaOiYpOsSKoqE8ltNqoSoJwmGR3xlBUjLuiE7HvEbd2dAufORuENlW8hymxt6wwqW49jC7Wy8TOkueadF/vXuHYtw+saX9f4usb/7RozTqVD5otI8/H4X46JLb5MSS+hjbHfo+Yztv8J1FTsneEHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8a520ee0c3efcf1043d978cc050131a2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned>result</outputs_assigned>
+        <parent_ui_id>1e8519d9-74c5-4724-b097-45866a754970</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:35:27</sys_created_on>
+        <sys_id>55a106a0c3efcf1043d978cc0501311e</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:15</sys_updated_on>
+        <ui_id>44da5d5e-5daa-4b89-b5cc-2bce325dcfa9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41Ty27bMBD8lYBn26BqC7J1Sx8BArQN0Li5FIWwIlc2EYpkSMqPGv73Li3ZCXxJjjvcx8zs8sBsF10Xw9LehqBWhpV/DkxJVrIFz+pp9mkmptCIJuOzqVwUcyF4zrNplhdsxAy0SJkeQ6cjxRvQXQI+ayueUZY3X8DdfNsJRImS3qUKTsP+6Z00sVZaekxc/o6YA09jInpWHq6e4t5hpaFGTd0eo1dmReUfZX8uvNC/lpPaUxzOja2XiUU2YriLaBLZsgEdcMRaMBKi9fsL4hHkg9GvwFqZSN1YSt4F9Y9azznnKbNBkiSwf72E1WBXD4u1VQIfXFTW9EiEWg81wuquNT97/slobIA0nI0mpAvUD11inWgMnJrHtd3+Og+8U+YkcHik7YC+RBDJhrqLGNIeOrW8MqdHvl8vAzW2NLFqwTlCKuftRp2mEOl2stIUTBptt8Qu3d8ERFI4ITdhckf41xP8BF4luT+oDRWncb+NeunwPi275nld51M5LppmPp5BVoxp/4txvuDAORSCZw07nqytXrokqjdpsKPqHaWEILxy8ZYobHBQfqQ7UyZ9kf7mNgOTIZQoVCDCy4Tdv8mTezonJd5CW+ufk9RX7Pgf2PMAy4ADAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0a520ee0c3efcf1043d978cc05013189</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned>count</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:14:02</sys_created_on>
+        <sys_id>6bbc79e4c3afcf1043d978cc0501312a</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:43:30</sys_updated_on>
+        <ui_id>bbb638f5-2248-47b0-9fd4-8fd20a6a2241</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTY/aMBD9Lz6TKIGEr9uK1UpIbVfq0r1UKzTxB1h17Kw/YCniv3e8CQHRSy+9ccs8z3jee55RjsQE3wTvVubBObnRZP7zbUCkjhh+H4lkZE6GWUVFDgUdgcCPrBix2WRKaVZm+SgfUzIgGmqOmdQE7THcgQoxPh6BCpbnfJwUGRsmxXhWJpBVIpnQsiqqshzBrEgXsex0wkImXaPg8NrVI0K3UjHLO2oNWOzkuSXz483Rv1JVUHGFqYuO6w11f2hiKLXnG2zTAl+6mmWPGssiiXxA+IfnmnHsLkA5PiA1aAbe2EOPWA7sWasLsMXrW3k1fDj5GzsWWcwTHPXQTnofrjtbWlg8gocXbwP1wfYuGUm5a51gXEBQfnGNtQnPjZdGtyUeKnWuNirU+ltrBOkvuHqF4JAEb6LQyLyTIV62Zv/9zPJJ6k9PukNlKKg+Au+trIKPfI4kyNWtzS30t9Fc8Rp7rmtoGqk368aanfzsg7TrdKMwSIUye+QXRzgFGjWm+ASQPiH++Am/gpVR8Fe8puv3Q8v3wJdxbMpiMp3mM5rwakyTYiZwSitBk0kF0zLP6ZBWgpwGxB3cQoFzF6vwjdbvIQptjessWrcuxxJqZeMfkNSOd26c3uKGtHzua3Zfs/ua/bc1Y5xKhzxXkdTy/F+LBwccSEmvob2xv6LCC3b6A59891MhBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2df61469c36bc75043d978cc05013133</block>
+        <comment/>
+        <connected_to>0e09c03e-98b1-4479-ae0d-41df8ab0811f</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-25 06:22:30</sys_created_on>
+        <sys_id>a2c65029c36bc75043d978cc0501318c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:15</sys_updated_on>
+        <ui_id>7c976419-e035-428e-a7f6-f5e40d8ba984</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">92520ee0c3efcf1043d978cc050131c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>14</order>
+        <outputs_assigned>result</outputs_assigned>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:36:54</sys_created_on>
+        <sys_id>a6f18ea0c3efcf1043d978cc05013155</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:15</sys_updated_on>
+        <ui_id>8d0aedfa-bb53-474a-a4f6-f7333da0ab78</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41STY/aMBD9Lz5D5DREAW4rVSutulukLt1LVUUTewxWHTtrO7AU8d87JoFFnHqcN1/vvZkjc33s+hjW7iEEvbFs+evItGRLtuB5U+RfZqIAJVTOZ4VcVHMheMnzIi8rNmEWWqRKj6E3keIdmD4Bq28USB06A4e3W0xstZEe05bfE9aBpwERPVse71Lx0GFtoEFDra/Ra7uh9v/ldWm8ErsnmsZTHC6DnZeJRT5h+BHRSqRFCkzACWvBSojOH66IR5Araz6BrbaRprFU/BH0Xxo955ynSoUkSeCQvYb16M0Ai63TAldd1M4OSITGjD3Cmb613wf+yVVUQBourhLSB5qHXWKdaIyc1OvW7X9cFj5qexY4Jo0TYK4RRLKh6SOGdIder+/MGZDn+2OgwZY21i10HSF1591On7cQ6TbbGAoyZdye2KXPykAkhRm5Cdkj4V/P8Bt4neS+0BhqTut+Wv3e41M6dsPLpikLOa2Umk9nkFdTuv9iWi44cA6V4Llip7O19XufRA0mjXbUg6NUEITXXXwgCjsclZ/oz7RNzz/83G5kMoYShQ5EeJ2wp5s6eaB30uIW2jv/J0n9xE7/AOMGl2paAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">de520ee0c3efcf1043d978cc050131a4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id>1e8519d9-74c5-4724-b097-45866a754970</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:36:39</sys_created_on>
+        <sys_id>c7e14ea0c3efcf1043d978cc050131d6</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:15</sys_updated_on>
+        <ui_id>66ce71ca-0d96-4f94-ba86-4f52468decbf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">61f61469c36bc75043d978cc05013145</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>17</order>
+        <outputs_assigned/>
+        <parent_ui_id>7c976419-e035-428e-a7f6-f5e40d8ba984</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-25 06:23:11</sys_created_on>
+        <sys_id>d0f6d069c36bc75043d978cc05013129</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:16</sys_updated_on>
+        <ui_id>1c2920a6-94f7-42aa-822b-3dd0e42fb75d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">46520ee0c3efcf1043d978cc05013185</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>d1d18c02-dbf2-489d-b23f-a8c667b3f0bd</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:08:45</sys_created_on>
+        <sys_id>da8b7560c3afcf1043d978cc050131ee</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:15</sys_updated_on>
+        <ui_id>48aa0fda-498c-422a-bc40-ebbc15e9c13e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">46520ee0c3efcf1043d978cc050131a0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:24:20</sys_created_on>
+        <sys_id>ea1f75a4c3afcf1043d978cc050131fb</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:43:30</sys_updated_on>
+        <ui_id>1e8519d9-74c5-4724-b097-45866a754970</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VS27bMBS8isC1IOgTGU12gYMABdIYjYNs2lR4oiibKEWqImnHFbzprgfpIXqdnKSPkvxB7KI12u66Mczh+8yMOXBLlDW1NfpeXWrNZ5JcvHv0CZcOw+8tkVAxckGokgU3XMmsA3yyAGHdxVhZabznr9+82JvceVNbdYfnL9/T0A/D0MPagutawOrhhBY656Jo2MCnhga3GtaQi/bFFS9wYhlCGZ3TiCbxKInDMH51FuWjJI/iIgEGCQ4UkDPRLR+EeDcd4v9UoVnVDtem4XI2nG+GKdMNqJrCsYpCn7Anw2TBkE8JQjOfVCALMKpZbZGGQTGRYgfMuTQ4jrjiJ80/48I4TV1hyVAiZf3l9pgNVvZweQUGkIqlxjZDKZ0rTpnuzSlYCVaY8T7WF0xqJ7VvMZCLTbcStpK3vSNkO2DzyyFiNZJgtVPqqA86yulcLe82LK+57FwZLoWiILYnMOhdbo3j0xImWIWDsgrqGh3N6kYteNeMXKpgJvAQlEItcal7nwFQRzxAYyG4Rvyqgx+g4U7FGxyDzT3NHDSnWfeWcRzaxMjaJ3qlxwK03olEd7NP1lHsJQ/ist4f10IbXptL3Lxgg461fxiNvVS0bcd5MdAKqHvy6/V7G4YJ6z6L+MPt25dlRhkQGVSH1SnmIjyM0j/bc1r+ziEt0yhMj+fvbHQsf0eSd2Lo4l+Ezv3iv5k5FP0/dH8cOq6zPiqDtm75X8zcowtYv3PrNeUaqd077PXmX8tdrPBxcboPLVXz0YnaYesfnzLPZP8GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e1f61469c36bc75043d978cc05013136</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>16</order>
+        <outputs_assigned>result</outputs_assigned>
+        <parent_ui_id>7c976419-e035-428e-a7f6-f5e40d8ba984</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-25 06:22:47</sys_created_on>
+        <sys_id>eed69c29c36bc75043d978cc050131e7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:43:30</sys_updated_on>
+        <ui_id>6767a31f-e810-4814-bacc-3bef83ef3ca0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41T22obMRD9laBn22hjG9t5CwmBQNpA4+alFDMrjWwRrbTRxY5r/O8dWesLCZS+7ZyZ0ZxzZnbHXIptimHubkPQS8tufu2YluyGzXhVD6vrkRiCEqrio6GcTaZC8DGvhtV4wnrMQoNU6TEkEyleg0kZsO5KYgs+NmjjlXLJSspKHVoD29d/FomVNtJj5vG7xyhNIyJ6dkOsLH1YME/avlH/l+L/ZW2gRnNJ+7OMuG1zHKLXdtnFT13TyxF0XmZaVY/hR0QrkaYrMAF7rAErITq/PSEeQT5bcwZWJKZoaOAj6D80b8o5z5UKSZHAkj2Fi869Aqt7iEBUkojJ49EMpwWG4oVEBSTm7hIrBc9t1M6Wlgi1OXY7kxr7vTjBTg8cl0VICkQC2yw1c++EqJeV2/w4snzQ9uBKlzROgDlFEMm7OsXMZ8eSnn+yuSBfjEaD+UIWDbQtIYvWu7U+TCHSzWBpKBgo4zbELl/wAERWOKAVwOCB8PsD/ApeZ7nf6BlqzuN+Wv2e8DGfTc3HdT0eyv5EqWl/BNWkT5c0649nHDiHieCVYvseC9twZyCEs1G0ocV7yjKLbZ1Bi+JxbhFet/GWSK2x82Kfr9Xm365sZt1xOy1P6EAS5hl7vKiTWzpVLS6hjfNvWfwZ2/8FlG3ZitQDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca520ee0c3efcf1043d978cc0501317f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:05:02</sys_created_on>
+        <sys_id>ffaa71e0c3afcf1043d978cc0501319b</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:15</sys_updated_on>
+        <ui_id>d1d18c02-dbf2-489d-b23f-a8c667b3f0bd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Gf2yhtSEb71g2QkAZMpUKaNhY5zk1rzbGDPyhd1P++63wAWpk2bbxM2lt97HvuuR+naYhytnbWrNTCGL6WZP7pdkS49Bj+boikFZA5YUoW3HIlyYjcU+E81jTG5aVQ21DDluoi03DnwNiQVspJu99/dlEUQ9Ok9DhNU5iNi3gC46Mkn45neRyN4zcFpGlyPMvZLFwCU7pAqopyyeU6y12xBmT58rcE59eXV6vTiw+rjyi+4KYWdHfzL9fANlwUGvph1VTjjCxoMm9+uLK7GjJBcxBY6rXVyIjhvMDTjCZlMokSFk/TeBpF0+OjSZ7G+WRaxBSOUnw3BL57NvsX1sEnQcgM9FiA1zKNRgQeLMgCMF9JhYERqagsqFV6R+ZWOwQ00OJKit3jiw2XFtmIf/tg+DfwTFHkX5aAhTHobh+PWT/RDmYbxRlc1a22FrE0F30MU8JV8rIrwe8ClNQJO+wCIs4gH9RetJfRayqvN2q7HBKecdkW2F8Kxah4PFGLbcidBeOnAQIqJMoqWtd+mrVW97wNRi1VuBZ4CP32YVLvvpAyLzzEHtHwDPGTFr6hmvsqLpAGg3GCJjNM83qorU1O9m1Xsjvn9XT19ZVkXTPwQRe2wDT30Ivejw5dnrXAk9WXnSuCzhVBZ4pgOaxp8LZd02BxeXIIchNIZYPTqra7QwO+IvNr2KKMaDmZscnLtqDxS7YI3rfIoTmGLv7EIZNfOKRHfssiSfLfIc8d4mXm1HCWtd8ypPP/N39skVtvhS6F6XaoAMYNKll57Hz4XvqLHU6ds+fQVumvvoYnbP8dLm6vdHkHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c7d9b120c3afcf1043d978cc050131e1^sys_idNOT IN1ab08220c3efcf1043d978cc050131d7,3bef3568c3afcf1043d978cc0501317f,56feb12cc3afcf1043d978cc05013122,96feb12cc3afcf1043d978cc05013123,aa218260c3efcf1043d978cc050131ac,bbef3568c3afcf1043d978cc0501317e,d6b08220c3efcf1043d978cc050131d8,e2218260c3efcf1043d978cc050131ad"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c7d9b120c3afcf1043d978cc050131e1</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>ca0977f0-f58c-46a0-aaf2-f273804740a9</source_ui_id>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:31:25</sys_created_on>
+        <sys_id>1ab08220c3efcf1043d978cc050131d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:31:25</sys_updated_on>
+        <transform_compositions>[{"id":"9c4cf2c60f4130106d1a3a3485767ef7","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="convert_string_to_number">bfac1e0e0f0130106d1a3a3485767e8a</transform_definition_id>
+        <ui_id>cffa27a6-17f6-47b6-a52f-957ffd4c673b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c7d9b120c3afcf1043d978cc050131e1</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>796e6d67-106b-43d8-a882-a150b61972bb</source_ui_id>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:27:58</sys_created_on>
+        <sys_id>3bef3568c3afcf1043d978cc0501317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:27:58</sys_updated_on>
+        <transform_compositions>[{"id":"179b33040f333300f4166fe7c4767e75","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="sum">bd7b3bc00f333300f4166fe7c4767ebe</transform_definition_id>
+        <ui_id>2f30b44a-c96e-4044-a7d0-3e66693bf9d1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c7d9b120c3afcf1043d978cc050131e1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{7f8f1405-7291-463b-af14-be59929e3624.item.amount}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:23:46</sys_created_on>
+        <sys_id>56feb12cc3afcf1043d978cc05013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:23:46</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>eee4417a-534f-49fb-8e0c-270a19a138cb</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c7d9b120c3afcf1043d978cc050131e1</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>eee4417a-534f-49fb-8e0c-270a19a138cb</source_ui_id>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:23:46</sys_created_on>
+        <sys_id>96feb12cc3afcf1043d978cc05013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:23:46</sys_updated_on>
+        <transform_compositions>[{"id":"179b33040f333300f4166fe7c4767e75","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="sum">bd7b3bc00f333300f4166fe7c4767ebe</transform_definition_id>
+        <ui_id>e3ce9b40-2847-4860-8660-f6f664814906</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c7d9b120c3afcf1043d978cc050131e1</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>8db11ad6-ec41-4cdc-a332-43255f05f35f</source_ui_id>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:33:21</sys_created_on>
+        <sys_id>aa218260c3efcf1043d978cc050131ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:33:21</sys_updated_on>
+        <transform_compositions>[{"id":"9c4cf2c60f4130106d1a3a3485767ef7","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="convert_string_to_number">bfac1e0e0f0130106d1a3a3485767e8a</transform_definition_id>
+        <ui_id>eeb750ab-dce1-4124-8856-1983e3b1caae</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c7d9b120c3afcf1043d978cc050131e1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{7f8f1405-7291-463b-af14-be59929e3624.item.amount}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:27:58</sys_created_on>
+        <sys_id>bbef3568c3afcf1043d978cc0501317e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:27:58</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>796e6d67-106b-43d8-a882-a150b61972bb</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c7d9b120c3afcf1043d978cc050131e1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.total_amount_sum}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:31:25</sys_created_on>
+        <sys_id>d6b08220c3efcf1043d978cc050131d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:31:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ca0977f0-f58c-46a0-aaf2-f273804740a9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c7d9b120c3afcf1043d978cc050131e1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.total_amount_sum}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:33:21</sys_created_on>
+        <sys_id>e2218260c3efcf1043d978cc050131ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:33:21</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8db11ad6-ec41-4cdc-a332-43255f05f35f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c7d9b120c3afcf1043d978cc050131e1^sys_idNOT IN20bcf1a4c3afcf1043d978cc0501316c,3f018e20c3efcf1043d978cc05013197,68af7d6cc3afcf1043d978cc050131f8"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=5478819c-eb6c-49f5-abfc-7ba8511c2cbf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</model>
+        <model_id>c7d9b120c3afcf1043d978cc050131e1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_c7d9b120c3afcf1043d978cc050131e1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:13:50</sys_created_on>
+        <sys_id>20bcf1a4c3afcf1043d978cc0501316c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=e41ff261-a39d-4cec-9844-385ec8f8d6d0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>total_amount</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Final Total Amount</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</model>
+        <model_id>c7d9b120c3afcf1043d978cc050131e1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_c7d9b120c3afcf1043d978cc050131e1</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:32:53</sys_created_on>
+        <sys_id>3f018e20c3efcf1043d978cc05013197</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5cfbd958-bb5f-453b-acec-5c3e0d83efc9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>total_amount_sum</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Total Amount (String)</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</model>
+        <model_id>c7d9b120c3afcf1043d978cc050131e1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_c7d9b120c3afcf1043d978cc050131e1</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:26:40</sys_created_on>
+        <sys_id>68af7d6cc3afcf1043d978cc050131f8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>reward_request</element>
+        <help/>
+        <hint/>
+        <label>Reward Request</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c7d9b120c3afcf1043d978cc050131e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:02:47</sys_created_on>
+        <sys_id>fe2a31a0c3afcf1043d978cc05013152</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:02:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c7d9b120c3afcf1043d978cc050131e1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_c7d9b120c3afcf1043d978cc050131e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:06:42</sys_created_on>
+        <sys_id>5c1b3124c3afcf1043d978cc05013181</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:06:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c7d9b120c3afcf1043d978cc050131e1"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>budget_amp_cap_validation</internal_name>
+        <label_cache>[{"name":"flow_variable.total_amount","label":"Flow Variables➛Total Amount","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"1e8519d9-74c5-4724-b097-45866a754970":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e41ff261-a39d-4cec-9844-385ec8f8d6d0"}},{"name":"flow_variable.total_amount_sum","label":"Flow Variables➛Total Amount Sum","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"d6b7edbf-8c6d-476b-9b8c-6543b3006a2f":["total_amount_sum-0","total_amount-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5cfbd958-bb5f-453b-acec-5c3e0d83efc9"}},{"name":"flow_variable.count","label":"Flow Variables➛Count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"1e8519d9-74c5-4724-b097-45866a754970":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5478819c-eb6c-49f5-abfc-7ba8511c2cbf"}},{"name":"7f8f1405-7291-463b-af14-be59929e3624.item.amount","label":"8➛Employee Reward History Record➛Amount","reference":"","reference_display":"Amount","type":"currency","base_type":"currency","parent_table_name":"x_1921751_employ_0_employee_reward_history","column_name":"amount","usedInstances":{"d779297a-2606-4e38-948f-5e30cb8f48cb":["total_amount_sum-0"]}},{"name":"acfd11e6-40d2-4695-a0bf-7c5b4b553a94.Records","label":"6 - Look Up Records➛Employee Reward History Records","reference":"x_1921751_employ_0_employee_reward_history","reference_display":"Employee Reward History","type":"records","base_type":"records","usedInstances":{"7f8f1405-7291-463b-af14-be59929e3624":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"acfd11e6-40d2-4695-a0bf-7c5b4b553a94.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"bbb638f5-2248-47b0-9fd4-8fd20a6a2241":["count-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.reward_request","label":"Input➛Reward Request","reference":"x_1921751_employ_0_reward_request","reference_display":"Reward Request","type":"reference","base_type":"reference","usedInstances":{"b626946f-019a-4888-bcb0-fd820b516892":[null],"acfd11e6-40d2-4695-a0bf-7c5b4b553a94":[null]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ce3df3c4-374a-4e12-9d37-00c2aafa8197","uiTypeLabel":"Reference"}},{"name":"subflow.reward_request.employee","label":"Input➛Reward Request➛Employee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1921751_employ_0_reward_request","column_name":"employee","usedInstances":{"b626946f-019a-4888-bcb0-fd820b516892":[null],"acfd11e6-40d2-4695-a0bf-7c5b4b553a94":[null]}},{"name":"6a8666e9-d31e-45b2-9b30-37de66589bc9.Record.remaining_budget","label":"1 - Look Up Record➛Department Reward Budget Record➛Remaining Budget","reference":"","reference_display":"Remaining Budget","type":"currency","base_type":"currency","parent_table_name":"x_1921751_employ_0_department_reward_budget","column_name":"remaining_budget","usedInstances":{"d1d18c02-dbf2-489d-b23f-a8c667b3f0bd":["condition"]}},{"name":"subflow.reward_request.amount","label":"Input➛Reward Request➛Amount","reference":"","reference_display":"Amount","type":"currency","base_type":"currency","parent_table_name":"x_1921751_employ_0_reward_request","column_name":"amount","usedInstances":{"d1d18c02-dbf2-489d-b23f-a8c667b3f0bd":["condition"]}},{"name":"subflow.reward_request.year","label":"Input➛Reward Request➛Year","reference":"","reference_display":"Year","type":"integer","base_type":"integer","parent_table_name":"x_1921751_employ_0_reward_request","column_name":"year","usedInstances":{"6a8666e9-d31e-45b2-9b30-37de66589bc9":[null,"conditions"]}},{"name":"subflow.reward_request.quarter","label":"Input➛Reward Request➛Quarter","reference":"","reference_display":"Quarter","type":"choice","base_type":"choice","parent_table_name":"x_1921751_employ_0_reward_request","column_name":"quarter","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"x_1921751_employ_0_reward_request","dependent_values":[""],"dependent_values_map":{"":"Q1"}},"sequence":100.0,"selected":false,"label":"Q1","used":false,"image":"","reference":false,"rawLabel":"Q1","missing":false,"value":"q1"},{"parameters":{"name":"x_1921751_employ_0_reward_request","dependent_values":[""],"dependent_values_map":{"":"Q2"}},"sequence":200.0,"selected":false,"label":"Q2","used":false,"image":"","reference":false,"rawLabel":"Q2","missing":false,"value":"q2"},{"parameters":{"name":"x_1921751_employ_0_reward_request","dependent_values":[""],"dependent_values_map":{"":"Q3"}},"sequence":300.0,"selected":false,"label":"Q3","used":false,"image":"","reference":false,"rawLabel":"Q3","missing":false,"value":"q3"},{"parameters":{"name":"x_1921751_employ_0_reward_request","dependent_values":[""],"dependent_values_map":{"":"Q4"}},"sequence":400.0,"selected":false,"label":"Q4","used":false,"image":"","reference":false,"rawLabel":"Q4","missing":false,"value":"q4"}],"usedInstances":{"6a8666e9-d31e-45b2-9b30-37de66589bc9":[null,"conditions"],"b626946f-019a-4888-bcb0-fd820b516892":[null],"acfd11e6-40d2-4695-a0bf-7c5b4b553a94":[null]}},{"name":"subflow.reward_request.department","label":"Input➛Reward Request➛Department","reference":"cmn_department","reference_display":"Department","type":"reference","base_type":"reference","parent_table_name":"x_1921751_employ_0_reward_request","column_name":"department","usedInstances":{"6a8666e9-d31e-45b2-9b30-37de66589bc9":[null,"conditions"]}},{"name":"undefined","label":"17 - End Subflow","type":"END","base_type":"END","usedInstances":{"6a8666e9-d31e-45b2-9b30-37de66589bc9":[null],"b626946f-019a-4888-bcb0-fd820b516892":[null]},"attributes":{}},{"name":"6a8666e9-d31e-45b2-9b30-37de66589bc9.Record","label":"1 - Look Up Record➛Department Reward Budget Record","reference":"x_1921751_employ_0_department_reward_budget","reference_display":"Department Reward Budget","type":"reference","base_type":"reference","usedInstances":{"0e09c03e-98b1-4479-ae0d-41df8ab0811f":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Budget &amp; Cap Validation</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2e524ee0c3efcf1043d978cc0501314f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:21</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=2e524ee0c3efcf1043d978cc0501314f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2e524ee0c3efcf1043d978cc0501314f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_2e524ee0c3efcf1043d978cc0501314f^id=2e524ee0c3efcf1043d978cc0501314f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2e524ee0c3efcf1043d978cc0501314f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2e524ee0c3efcf1043d978cc0501314f^sys_idNOT INea524ee0c3efcf1043d978cc05013151"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2e524ee0c3efcf1043d978cc0501314f</id>
+        <name>Budget &amp; Cap Validation</name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:32</sys_created_on>
+        <sys_id>ea524ee0c3efcf1043d978cc05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ea524ee0c3efcf1043d978cc05013151"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2e524ee0c3efcf1043d978cc0501314f^sys_idNOT INea524ee0c3efcf1043d978cc05013153"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ce3df3c4-374a-4e12-9d37-00c2aafa8197</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1921751_employ_0_reward_request</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reward_request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Reward Request</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</model>
+        <model_id>2e524ee0c3efcf1043d978cc0501314f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2e524ee0c3efcf1043d978cc0501314f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="x_1921751_employ_0_reward_request">x_1921751_employ_0_reward_request</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:33</sys_created_on>
+        <sys_id>ea524ee0c3efcf1043d978cc05013153</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ea524ee0c3efcf1043d978cc05013153"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2e524ee0c3efcf1043d978cc0501314f^sys_idNOT IN7e524ee0c3efcf1043d978cc05013193"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b05bb53d-7ff8-4a17-9019-590a00a7c01f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>result</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</model>
+        <model_id>2e524ee0c3efcf1043d978cc0501314f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_2e524ee0c3efcf1043d978cc0501314f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:33</sys_created_on>
+        <sys_id>7e524ee0c3efcf1043d978cc05013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7e524ee0c3efcf1043d978cc05013193"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2e524ee0c3efcf1043d978cc0501314f"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2e524ee0c3efcf1043d978cc0501314f"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2e524ee0c3efcf1043d978cc0501314f^sys_idNOT IN4f528ee0c3efcf1043d978cc05013113,87528ee0c3efcf1043d978cc05013112"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>4f528ee0c3efcf1043d978cc05013113</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:20</sys_updated_on>
+        <ui_id>acfd11e6-40d2-4695-a0bf-7c5b4b553a94</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXyW7bMBD9FYNnwZC8ZbkVSYMWyAIkQS5pSlASZROlJYWkvMTQv3cokrJgK4kNOEWC3sxZOG+G71H04wqxGJ2i42Tg+yQYHh/5fr/v+6NRPyJBGPZHUeiHgxB5KCVTCpGKhJzCckZ4odcLHJz0gqNhgOk059kS+/YHpVjQORExnjCpMrGEpJjJnJPlg839bgM7t1Vg50cdGE0YjwVN0enjk4dyIqC4ogKdrjZcu6LnJKQcQu8t/I1u1DKvl7jyGdtlM61zbRyZiDUU30N0oWgaU8CQEC6ph6YkjUnVg7MISuKblK8NE5Yq2BHp4IVkL1D32NdxCYWuImp89RLbmRlzck4UuVOiiFQhbGg0yVhEpZlHTBNScHXWtJmAm1yxLDUppm2TnfFiml6bcaB6A3dEYCkkgKC5blQjt20kd5NsfutQXrC0mol18iwivF4RpQQLC6XxrBDldAob4SnJc5aOcS6yGauSAcu0O+aw6CY8m0NRycZpl0QaeBfmSroXYD+vzA9EMN3FFWwDyQCIcWAINkcos0JUo5zhiBeycgiSSrMXKj0kl/KMEynXncPI8XOhcZs52I6xGZpOiQTL1TfYYkZtc6W3k4CG/ppyUZbGTKOQDRU5yfwqID1erWQR6hF0rYIEfS6oVF0XVpa/AamAtt5JsFFluS2+f1HykDKuZuhkfNYcYttgraC3bJdtG1hBBwcTNPTxlSQNxT+fovfXqBnBO0KNjt4k2XDNJ5kJhc0sG0rdFtLePN8BguP5jWZmJ1y+hsrSPGGUx23frQvt2Phu9f7P79anJDkAirE5PZZyllaPEAD6Uez3375iTzZ4VtFrzf3KRmS0rQHSUVnnZW8l7ADHKeEOanfuDZ4WiO6+ryizedc7oxVA/2AC6PcOI4BV3WY9yJaZu3enPk0X/6LjyWY8ULCREJRtAturZrBvzV65LeD+Xgpuks14zl/h3IEfqK8o0vvIK2ACqbYeNvrFcxaPqVpXd1FxpuaE/2nzW8Zhd1BVex/w2B28KdtRsJYoKAUehhIOr/naDeB5tH2HBJ4x73eF7IDFjeOKLOCfpgPTitBeI6B0Oq7OpnmP/KytluSDAz4YP+2X1B1WqwbdmX2J/4iHE8LTX4w1eIc4EQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f528ee0c3efcf1043d978cc05013113"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>87528ee0c3efcf1043d978cc05013112</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:20</sys_updated_on>
+        <ui_id>6a8666e9-d31e-45b2-9b30-37de66589bc9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX227jNhD9FUHPjiv5JjtvuzEMLLDdAEmal+2WoEQqJkqLWpKK4xj+9w4lSnJtxbYau0jRJ0HDIed2zgz5fe0y4l67Q+JN4slkOA48r9/3vNGoH2E/DPujKPTC0Hc7boIXFDSVkBrpVUpB9Ix5VsmwikBEmEo5Xj3aFexo4byCPJozTiRN3OvvPzpuiiWcpql0r9c7S6e6w3FIOajeg23nofCnwcX8cw02BIvK/692600pFJIYV/odl75omhAKPsSYK9pxFzghWAu5qiSSYnKb8FowZ4mG01yj/KLYK9jr94xeTCGqiBZr1S+yKSrE8RRrfK9lFulMWtXCWQX5WFdhVolsyLl139t0av1Xo4939Qnd3uBvIN+Exjjj+uaf2fTb2uwZm0WAt6lmAqru9k1dcMjL8AXPFsm3opZu5eFjA9iKlekbmMsUJJumpqCmQrZc8f1cLO/KasxYkvtlF7mIMK/+sNaShZk2eVm7MUExo5wglnCWGEtQNgMfyukCLKAFTlOWPKFUimeWnwqxLLpPHH66MRdLkwv2lHRxZCLvArBwdwbyaS5+xJKZLPwKx8DmjjE4h63WHlKRZKlGS0aeqK6tl1pE6CXmfzatW8ShslB5eO6m46qVuuFYqTrZAFP0MzM5KFJvs4fyQuVbci8+QQTP1CbKYCCnrX+QtpjsULQo9BZe9vtH685xggtlFm4NIp1w9ZZXtnUUNc81/t4+ZmbB+VYslPA+WwsZe+dpIU0U36dgKwbuU8tA7R3MuiCBmhjbHvhFbo6hf3JwaE1qnLEYLSCfLOUUSRoBdhTCkqJYZAlBRXBbtDDJjplU2irv0+SOQukTRwCmHD2nTq7tVNotKXQ8jpJCX2KnDMRaUw4E4uSBOFUg7cJuM7IHZ+Pb4Ex8q8fhDDOeV0Npmm6Vk0op5Btj+0ghDyDixJl+olP+WZ16/9BvokDj8D/i65mvBJdpXOcfzBHF4aCHR0Hf9z3P90jgjYPAH4/CeISDQVxzFCGVRHCXgJNjgAocj0polHX29/uPvWq06zMnOFUicCqS3zPP6wXaMV5BeZ3Sq+N+234SCsEpTnYaygN4/sssvw9VcB1+uKbyrwzx95IhYw+7mS5Ejbm+1MzP2G8J+5nRLwZiY+r1xj6JrsaBH1wNYjK6mhA8vMKTcBj0CY0G8SXuwWR48BK6dROIREKYiUttEQysYalNdgzo+2S9VlloUtGVdIklgR4IASrdrRU3mz/AWwlkO7LFaoH+iuJjykZls9mn+8dzsF3nOaE+Zee52S5QU9HK28qu7GvTAeV0PWOD8f5LLeZDvhMu9BwgB6/ReFDjqTiu5v8L8ic9Pxj6iC5SLlbIQzWRkKVAmOXP/D1uTitN5y7XdD6Xmi1Jctz/kiQPNoCdeCw18t+mB3S+becB7f0/H9Af8yIKDjEOCEFFCZXIZJ7KZxTxTOULEifKvtzON0d//AWzzuR1lxYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=87528ee0c3efcf1043d978cc05013112"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2e524ee0c3efcf1043d978cc0501314f"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2e524ee0c3efcf1043d978cc0501314f^sys_idNOT IN0b528ee0c3efcf1043d978cc05013108,0f528ee0c3efcf1043d978cc05013103,22f65469c36bc75043d978cc05013180,22f65469c36bc75043d978cc05013183,2af65469c36bc75043d978cc05013181,83528ee0c3efcf1043d978cc0501310e,87528ee0c3efcf1043d978cc0501310a,87528ee0c3efcf1043d978cc0501310f,8b528ee0c3efcf1043d978cc05013105,8b528ee0c3efcf1043d978cc0501310b,8b528ee0c3efcf1043d978cc05013110,8f528ee0c3efcf1043d978cc05013106,8f528ee0c3efcf1043d978cc0501310c,9af65469c36bc75043d978cc05013144,c3524ee0c3efcf1043d978cc050131f5"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca520ee0c3efcf1043d978cc0501318c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>0b528ee0c3efcf1043d978cc05013108</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:20</sys_updated_on>
+        <ui_id>7f8f1405-7291-463b-af14-be59929e3624</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miK9wl7xVrSpVurtKadWXUxUt9pJYZ2zONkk5xH+/dSC06mOfYMe7szODGZjpfNt592xunJMHzba/XyMmdcDofWAaGmRbJj02jkXsBKoL9TAAr0WaYrkqEpGtinKzXkFS1atvfF0V1Xqdw6aId8iNFW4caVRI1yroX77OwI9SCYuzyBYsafNo2Xb4dCQFLUg3ot6kyYbnWZlnSZJ9L9KqzKs0EzmgKIlQQYWKWh9md5/M+r4NpZ0kzMCPeWa3oPQIIrIkYvjmUQuk9TUohxFrQAvwxvZs621HgEUQj1r1S8dRak90LPS+OfmPNqZJEhprJEMcp8Ol3M85TnB9Bx6eiJr7zs6t/GgkRzdFIbCGTvnbj9jU8Nh6afQ04qFS12mjukb/mpJgC8H1sxHSORKBbTAapM8+6qejOe+uKu+lvoQyHyrDQS0VeG9l1fmgZ2CosCGifQNtK/Vh31pzkpdh0tLEB0VFXCtzpqXhisbAg/CYcoX4nvC7C/wCVgYXP4mGhseIud7dKnDu3QuFuP/bBSWTs9nDfoohjHArW39DC044yx1fw62fuJdMuXQk4TlgD9d/JRz0dIMk/widjf0TxL9j439fVdO6dQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8a520ee0c3efcf1043d978cc05013182</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>result</outputs_assigned>
+        <parent_ui_id>d1d18c02-dbf2-489d-b23f-a8c667b3f0bd</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>0f528ee0c3efcf1043d978cc05013103</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:20</sys_updated_on>
+        <ui_id>75676918-7882-4569-8a68-d45ab81021bd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41TyW4iMRD9lchnQO4BxHLLokhImYk0YXIZRajaLoOF2+54gTCIf58y3SxKLrl1Pdfy3qvqPXMp1imGubsNQS8tm/7dMy3ZlE14UfaLHwPRByVUwQd9ORmNheBDXvSL4Yh1mIUKKdNjSCZSvAGTMnBnnFijnN7MbEhKaaHRxpu7JJeY06QOtYHd6/eyxUob6TEze+uwGjwNjejZlHha+rBgnrRdU6Mvyd/VYaBEcy3ks7C4q3Mcotd22cZPbdHLCXReZlpFh+FHRCuRpiswATusAishOr87Ix5BPltzAVYkptFQwUfQ/2jemHOeMxWSIoHN6zlctDY2sHqACEQliZg8nsxwWmBovJCogMTcX2NNwnMdtbNNSYTSnKqdSZX91TjBzg1OWyMkBSKBdZaaubdC1MvKbX+fWD5qe3SlfaRVgzlHEMm7MsXMZ8+Snn+yuUG+GI0GK5q4qKCuCVnU3m30cQqRrnpLQ0FPGbcldvmmeyCywh6tAHqPhD8c4VfwOsv9SW2oOI/7Y/V7wlk+m5IPy3LYl92RUuPuAIpRly5p0h1OOHAOI8ELxQ4dFnbh3kAIF6NoQ4v3lGU2trUGLRqPc4nwuo63RGqDrReHfK02/4jNZjYtt/PyhA4kYZ6x2VWe3NGpanENbZ1fZ/EX7PAfCpwjXOYDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2df61469c36bc75043d978cc05013133</block>
+        <comment/>
+        <connected_to>0e09c03e-98b1-4479-ae0d-41df8ab0811f</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-25 06:23:20</sys_created_on>
+        <sys_id>22f65469c36bc75043d978cc05013180</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:21</sys_updated_on>
+        <ui_id>7c976419-e035-428e-a7f6-f5e40d8ba984</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">61f61469c36bc75043d978cc05013145</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>17</order>
+        <outputs_assigned/>
+        <parent_ui_id>7c976419-e035-428e-a7f6-f5e40d8ba984</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-25 06:23:20</sys_created_on>
+        <sys_id>22f65469c36bc75043d978cc05013183</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:21</sys_updated_on>
+        <ui_id>1c2920a6-94f7-42aa-822b-3dd0e42fb75d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e1f61469c36bc75043d978cc05013136</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>16</order>
+        <outputs_assigned>result</outputs_assigned>
+        <parent_ui_id>7c976419-e035-428e-a7f6-f5e40d8ba984</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-25 06:23:20</sys_created_on>
+        <sys_id>2af65469c36bc75043d978cc05013181</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:21</sys_updated_on>
+        <ui_id>6767a31f-e810-4814-bacc-3bef83ef3ca0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41T22obMRD9laBn22hjG9t5CwmBQNpA4+alFDMrjWwRrbTRxY5r/O8dWesLCZS+7ZyZ0ZxzZnbHXIptimHubkPQS8tufu2YluyGzXhVD6vrkRiCEqrio6GcTaZC8DGvhtV4wnrMQoNU6TEkEyleg0kZsO5KYgs+NmjjlXLJSspKHVoD29d/FomVNtJj5vG7xyhNIyJ6dkOsLH1YME/avlH/l+L/ZW2gRnNJ+7OMuG1zHKLXdtnFT13TyxF0XmZaVY/hR0QrkaYrMAF7rAErITq/PSEeQT5bcwZWJKZoaOAj6D80b8o5z5UKSZHAkj2Fi869Aqt7iEBUkojJ49EMpwWG4oVEBSTm7hIrBc9t1M6Wlgi1OXY7kxr7vTjBTg8cl0VICkQC2yw1c++EqJeV2/w4snzQ9uBKlzROgDlFEMm7OsXMZ8eSnn+yuSBfjEaD+UIWDbQtIYvWu7U+TCHSzWBpKBgo4zbELl/wAERWOKAVwOCB8PsD/ApeZ7nf6BlqzuN+Wv2e8DGfTc3HdT0eyv5EqWl/BNWkT5c0649nHDiHieCVYvseC9twZyCEs1G0ocV7yjKLbZ1Bi+JxbhFet/GWSK2x82Kfr9Xm365sZt1xOy1P6EAS5hl7vKiTWzpVLS6hjfNvWfwZ2/8FlG3ZitQDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8a520ee0c3efcf1043d978cc050131a2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned>result</outputs_assigned>
+        <parent_ui_id>1e8519d9-74c5-4724-b097-45866a754970</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>83528ee0c3efcf1043d978cc0501310e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:21</sys_updated_on>
+        <ui_id>44da5d5e-5daa-4b89-b5cc-2bce325dcfa9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41TyW4bMQz9lUBn29DUNrzcUqcBAqQN0Li5BIXBkShbsEaaaPFSI/9eyjNekBza2/CRFN975ByYS7FOMczdbQh6adn09cC0ZFM24UXZL74MRB+UUAUf9OVkNBaCD3nRL4Yj1mEWKqRKjyGZSPEGTMrAV+PEGuX0Zgb1zbedQJQoKS91qA3sX/5RJlbaSI+Zy+8Oq8HTmIieTYmZpQ8L5lHbNb3wqfh/mRso0VxT/ygl7usch+i1XbbxY9v0fAKdl5lW0WG4i2gz+6kCE7DDKrASovP7M+IR5JM1F2BFYhoNFeyC/kPzxpzzXKmQFAlssudw0frXwOoOIhCVJGLyeDLDaYGh8UKiAhIzu8aagqc6ameblgilOXU7kyr7o3GCnR84rYuQFIgE1llq5t4KUc8rt/15Ynmv7dGVNkk7BnOOIJJ3ZYqZz4ElPf9gc4N8MhoNVjRxUUFdE7Kovdvo4xQiXfWWhoKeMm5L7PIV90BkhT1aAfTuCb87wi/gdZb7nZ6h5jzul9VvCR/y2ZR8WJbDvuyOlBp3B1CMunRJk+5wwoFzGAleKPbeYWEfZgZCuBhFG1q8pSyzsa01aNF4nFuE13W8JVIbbL14z9dq86/XbGbTcjsvT+hAEuYZe7iqk3s6VS2uoa3z6yz+gr3/BflhQ3zYAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c6520ee0c3efcf1043d978cc0501319b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned>total_amount_sum</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>7f8f1405-7291-463b-af14-be59929e3624</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>87528ee0c3efcf1043d978cc0501310a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:21</sys_updated_on>
+        <ui_id>d779297a-2606-4e38-948f-5e30cb8f48cb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0VPG8TBTmrHyVtoKRS2FZasL6OYa30kYrLk6iNpFvLfdxU7SelgDPY06Jt17tc5R7p4T0zwbfBuaebOyZUms+9PAyJ1xPB7TyQjM1KUICasoHQMgoosvR6z6aSkNM3TbJyJkgyIhoZjpjceVAWNCdpXLjQY2YAKMbTfC1Z5C9oJY5vZZFrwghWTJEuLOsGOZQJlOUogy9O6yKaTUV0fDljPpGsV7B7/sQ1dS8Us7xW2YJGw55bM9m9Cf6tYQc0Vpi6j5Kv5UfLVh4W3Uq8+/tERv2tjxB1T+/OnvtviBBrLIrvRgPAXzzXjSEuAcnxAGtAMvLG7M2I5sAetLsBaao/dSEx+cfInzivTNI2ZgqNUyrvo+Vj1NnewuAUPSCVQH2yfStdGUu46kxgXEJS/eY11CQ+tl0Z3JR5qdao2KjT6S+cJOTc43SoiwSEJ3kapkXsvRCzWZvv1xPJO6qMrfVAZCup8Ao/e1cFHPnsS5PKNzR3ym9Fc8QYnVg20LSJVa81GHqcg6Wa4UngYCmW2yC6uyBBoVDjEK4DhHeK3R/gRrIxyP2MbLI7jvmn5HPh9fE85FTWb5mVS17lIrvNxnQDlNMnpmKesHHNBp+QwIG7nbhQ4dzEKb6h6DlFmZ1tvUNV5HEuola2fI6kN7704PMW16/i8r/H7Gr+v8X+7xoxT6ZDnMpK6P/2XY2CHL1PS19DW2B9R4QU7/AI6coyG4QcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">de520ee0c3efcf1043d978cc050131a4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id>1e8519d9-74c5-4724-b097-45866a754970</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>87528ee0c3efcf1043d978cc0501310f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:21</sys_updated_on>
+        <ui_id>66ce71ca-0d96-4f94-ba86-4f52468decbf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">46520ee0c3efcf1043d978cc05013185</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>d1d18c02-dbf2-489d-b23f-a8c667b3f0bd</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>8b528ee0c3efcf1043d978cc05013105</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:20</sys_updated_on>
+        <ui_id>48aa0fda-498c-422a-bc40-ebbc15e9c13e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0e520ee0c3efcf1043d978cc0501319d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned>total_amount</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>8b528ee0c3efcf1043d978cc0501310b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:21</sys_updated_on>
+        <ui_id>d6b7edbf-8c6d-476b-9b8c-6543b3006a2f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBn25As2ZF9CxIECNA2QOPmUgTCmlw6RClS4cOJa/jfu7TkB5IeeuslN3G4j5nhLrRlNoY2Br+wV96rlWHzn08DpkzC6HvLlGBzVsgsr3Cc8QIll3lWFmJ2WXGeTbK8yGeXbMAMNEiRwQbQNTQ2mkDoGnRM8HYrRR0cGC+ta+aVWOY5iOkQeZkPSy74EIpiPCyL8WQis4ksJnK3o3yhfKth89iXIYQ/Ky0c9kRbcNQ3oGPz7burfyWuYYmaQm+VAX2xSPwvrg78/64qbNqEKhNwRa074Etf5+6IWicSsWLA8C2gEUiMJGiPA9aAERCs2xwRhyDujT4Bz1S+k9zAm1e/qWOZpTiJpJH3dhyPdW9VB8sbCPAQXOQhuqNzVnH0nTsCJUQdrs+xLuC+DcqaLiXAUh+yrY6N+db5wY4Fzl4meiKBbRKamPcy5MOzff1+YEkm7z3pL7XloI8nCMGpZQyJz5ZFtXhvcwd9NBo1NtSzbqBtlVnVrbNrte9DtJvRStNhJLV9JX5pyEfAk8YRPQGMbgm/2cOP4FQS/JXK9P1+GPUS8S6NEpa5lONpTpM6EzSzyIezqiyHRTVBXslKTEXGdgPmN/5ag/cnq+iN6peYhHbG9RbVncsphTvVhisitcbejd1TWp6Oz+cifi7i5yL+x0UUyJUnnotE6u7wb0wXG5pLxc+hV+t+JYUnbPcH5KpoA2UHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">92520ee0c3efcf1043d978cc050131c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>14</order>
+        <outputs_assigned>result</outputs_assigned>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>8b528ee0c3efcf1043d978cc05013110</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:21</sys_updated_on>
+        <ui_id>8d0aedfa-bb53-474a-a4f6-f7333da0ab78</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41T227iMBD9Fz8DchYiLm9Vq0rVdovUsn1ZraKJL2DVsVNfoCzi33eMA0TtS98yx3M558zkQGwMbQx+ZW+8V2tDFn8ORHGyIHNa1OPix4SNQTJZ0MmYz6czxmhJi3FRTsmAGGgEZjrhow4Yb0HHBCx/YsCVbzXsX/sY2yjNnUhT/g5ICw4bBOHIAmca/DCgH5V5w/Qvyd/lpKEWuk/qM8mwb1Psg1Nm3cWPXdHLGbSOJ1rFgIiPIAwXOF2C9mJAGjAcgnX7C+IE8KXRV2CDYrKGBj68+ofzZpTSlCkFKmIiv17CqjMrw/IOAiCVyEJ04myGVUz47AUXElDMbR/LCcs2KGtySYBan6utjo15yk6QS4PzbhCJHkmINklN3Dsh8mVjd89nlvfKnFzpHrVloC8RBPSujiHxOZCoVp9szsgXo4UWDU6sGmhbRKrW2a06TUHSzWitMRhJbXfILt3nCFhSOMIVwOge8bsT/ApOJbm/sA0Wp3G/jXqP4iGdTU3Lui7HfDiVcjacQDEd4iXNh+WcAqUwZbSQ5Dggfu9vNXh/NQo3VL3HJDPb1hlUZY9TCXOqDTdIais6L47pWk36qfJmth23y/KY8ihhlbCHXh7f46kq1od21r0l8Vfs+B8k2Xh+sgMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0a520ee0c3efcf1043d978cc05013189</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned>count</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>8f528ee0c3efcf1043d978cc05013106</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:20</sys_updated_on>
+        <ui_id>bbb638f5-2248-47b0-9fd4-8fd20a6a2241</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTY/aMBD9Lz6TKIGEr9uK1UpIbVfq0r1UKzTxB1h17Kw/YCniv3e8CQHRSy+9ccs8z3jee55RjsQE3wTvVubBObnRZP7zbUCkjhh+H4lkZE6GWUVFDgUdgcCPrBix2WRKaVZm+SgfUzIgGmqOmdQE7THcgQoxPh6BCpbnfJwUGRsmxXhWJpBVIpnQsiqqshzBrEgXsex0wkImXaPg8NrVI0K3UjHLO2oNWOzkuSXz483Rv1JVUHGFqYuO6w11f2hiKLXnG2zTAl+6mmWPGssiiXxA+IfnmnHsLkA5PiA1aAbe2EOPWA7sWasLsMXrW3k1fDj5GzsWWcwTHPXQTnofrjtbWlg8gocXbwP1wfYuGUm5a51gXEBQfnGNtQnPjZdGtyUeKnWuNirU+ltrBOkvuHqF4JAEb6LQyLyTIV62Zv/9zPJJ6k9PukNlKKg+Au+trIKPfI4kyNWtzS30t9Fc8Rp7rmtoGqk368aanfzsg7TrdKMwSIUye+QXRzgFGjWm+ASQPiH++Am/gpVR8Fe8puv3Q8v3wJdxbMpiMp3mM5rwakyTYiZwSitBk0kF0zLP6ZBWgpwGxB3cQoFzF6vwjdbvIQptjessWrcuxxJqZeMfkNSOd26c3uKGtHzua3Zfs/ua/bc1Y5xKhzxXkdTy/F+LBwccSEmvob2xv6LCC3b6A59891MhBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">46520ee0c3efcf1043d978cc050131a0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>8f528ee0c3efcf1043d978cc0501310c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:21</sys_updated_on>
+        <ui_id>1e8519d9-74c5-4724-b097-45866a754970</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VS27bMBS8isC1IOgTGU12gYMABdIYjYNs2lR4oiibKEWqImnHFbzprgfpIXqdnKSPkvxB7KI12u66Mczh+8yMOXBLlDW1NfpeXWrNZ5JcvHv0CZcOw+8tkVAxckGokgU3XMmsA3yyAGHdxVhZabznr9+82JvceVNbdYfnL9/T0A/D0MPagutawOrhhBY656Jo2MCnhga3GtaQi/bFFS9wYhlCGZ3TiCbxKInDMH51FuWjJI/iIgEGCQ4UkDPRLR+EeDcd4v9UoVnVDtem4XI2nG+GKdMNqJrCsYpCn7Anw2TBkE8JQjOfVCALMKpZbZGGQTGRYgfMuTQ4jrjiJ80/48I4TV1hyVAiZf3l9pgNVvZweQUGkIqlxjZDKZ0rTpnuzSlYCVaY8T7WF0xqJ7VvMZCLTbcStpK3vSNkO2DzyyFiNZJgtVPqqA86yulcLe82LK+57FwZLoWiILYnMOhdbo3j0xImWIWDsgrqGh3N6kYteNeMXKpgJvAQlEItcal7nwFQRzxAYyG4Rvyqgx+g4U7FGxyDzT3NHDSnWfeWcRzaxMjaJ3qlxwK03olEd7NP1lHsJQ/ist4f10IbXptL3Lxgg461fxiNvVS0bcd5MdAKqHvy6/V7G4YJ6z6L+MPt25dlRhkQGVSH1SnmIjyM0j/bc1r+ziEt0yhMj+fvbHQsf0eSd2Lo4l+Ezv3iv5k5FP0/dH8cOq6zPiqDtm75X8zcowtYv3PrNeUaqd077PXmX8tdrPBxcboPLVXz0YnaYesfnzLPZP8GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51f6d069c36bc75043d978cc050131f8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-25 06:23:19</sys_created_on>
+        <sys_id>9af65469c36bc75043d978cc05013144</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:20</sys_updated_on>
+        <ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K8jPaZUPktG+IRgSEtAJKiQ0oejGuaHWXDuznZau6n/fdZK2aHQbiD3uLT732j7n+B5lzXTj6sbZqT61VjwpNv76GDChPEbfayZKNmZVCFU04hFP4iyJwzA+OY6KLCmiuEwAIWEBUzBH6uRalcIJrfIWCNgCZOMLboYGj4Q9OscajJujclQtha0lrO7/2MRnQpYGe25UoJMdGjZe/1J6K1cJBUpqPduSPbpqkd+rcKva49YZoZ769VV/yt0W1Kb0rKIwYPjsUJVIfCqQFgM2B1WC02a1QwxCOVFyD8wEqR0z5pufrfhBF8Zp6hsrckVx7Iq7Zd6b18HVOTggKg13jelb+UwLjrYzp8QKGunOXmJdw6T2UrstDgq53a1lM1c3nSNsd8D2rQhpLJHA2iv11Hsd1d1ML2+3LC+Eal3pi1JzkLsVOPKuaJzns2Yo0b94Poe6Jkfz2uiFaDcTl/nwSdJiWEm9pEv9rA6Be+JDMhaGF4Sft/A9GOFVXNMxtLmjWYAVPG/n2s+ZIQmbgNmVPZNg7V4kuZt/bzzFTnIvLu/88Vu4EbU7pZsX2OvYBH1MRpBWaRSmh0fvODswYC8Ssl5ncJJlGY4GZRLh4Dgt4sGoSMJB8qnELEtPRgUfDW+R06BtNpd3N5Pp5+sv04fXOfrIUe9L2xskv0rbYRveE7H4LxHz7/vGhIVh+D9iH46YsHkXjF5be/k/TNijj0l3585rLixRm3rscvu/8oUVDZfgL6GlNt+8qD22+QllxHp/+QYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca520ee0c3efcf1043d978cc0501317f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>0e09c03e-98b1-4479-ae0d-41df8ab0811f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>c3524ee0c3efcf1043d978cc050131f5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:20</sys_updated_on>
+        <ui_id>d1d18c02-dbf2-489d-b23f-a8c667b3f0bd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYFnW5CtWI19c/MAAjRJ4RgBijYVVhRlE6VIhY84ruB/71IPJ6gDtEFyKdCbONxdzix3qJooZytnzVLNjeErSWZf7waES4/hd00klIzMCFUy55YrSQbkAYTzWF0blxVCbULNNqDzVLN7x4wNoVRO2t3um4uimNV1AsdJkrDpMI9HbHg0ycbDaRZHw/hDzpJkcjzN6DRcMKp0jqVK4JLLVZq5fMWwyve3Fri4ubpenl1+Xn5B8jk3lYDt7b+sga65yDXrLqsCjXdkmSaz+rctnqPEKUyKySia0HicxOMoGh8fjbIkzkbjPAZ2lGBBARkTGHry7JZfuHi7rTxkrEZq3fpTl3rTg8jfUxlHA8IeLZM5QxIFCMMGpASZg1V6S2ZWOwQ0g/xaiu0+Ys2lxWrExz4a/pP5SlHkIwuGuihrd/fLtLvQFi5OwQJScdQ63YXSteKUmbYjOSvACXvyHGsDrqtGZZNiIRN9thKulFdtM8i+QD8/iDiDJFjllXrunZDiZq02i57lOZdNV7pNoSiI/Qos9i5z1vOpCROsxEJpCVXlJ6DS6oE3ycilDFcCF6GfWDzUOzYE6omH2FgIzxE/beBb0NyruMQymIyzYFJDNa96bc3hZDcgZmtOBBjzpBGbm947z7BV3GlL2/b4lKbQHA9+YJ2M3eDwrUgb4OnBWLTeClpvBa21gkU/7MHHZtiD+dXpIchNIJUNzsrKbg9t/I6VX2euIoJiNKWjl80F8UvmClrPHFqs79drfDb6g8865K+MNpn899mbfeZpZmA4TZu/KJbzT907Gu3OG6o9dN9syg1yW3rsov93+40tThSnz6GN0j+8qids9wsBts9qBQgAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2e524ee0c3efcf1043d978cc0501314f^sys_idNOT IN0b528ee0c3efcf1043d978cc05013115,0f528ee0c3efcf1043d978cc05013114,47528ee0c3efcf1043d978cc05013115,4b528ee0c3efcf1043d978cc05013114,83528ee0c3efcf1043d978cc05013115,87528ee0c3efcf1043d978cc05013114,c3528ee0c3efcf1043d978cc05013114,cf528ee0c3efcf1043d978cc05013114"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2e524ee0c3efcf1043d978cc0501314f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.total_amount_sum}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>0b528ee0c3efcf1043d978cc05013115</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:34</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8db11ad6-ec41-4cdc-a332-43255f05f35f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2e524ee0c3efcf1043d978cc0501314f</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>eee4417a-534f-49fb-8e0c-270a19a138cb</source_ui_id>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>0f528ee0c3efcf1043d978cc05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:34</sys_updated_on>
+        <transform_compositions>[{"id":"179b33040f333300f4166fe7c4767e75","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="sum">bd7b3bc00f333300f4166fe7c4767ebe</transform_definition_id>
+        <ui_id>e3ce9b40-2847-4860-8660-f6f664814906</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2e524ee0c3efcf1043d978cc0501314f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.total_amount_sum}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>47528ee0c3efcf1043d978cc05013115</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:34</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ca0977f0-f58c-46a0-aaf2-f273804740a9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2e524ee0c3efcf1043d978cc0501314f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{7f8f1405-7291-463b-af14-be59929e3624.item.amount}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>4b528ee0c3efcf1043d978cc05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:34</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>eee4417a-534f-49fb-8e0c-270a19a138cb</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2e524ee0c3efcf1043d978cc0501314f</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>8db11ad6-ec41-4cdc-a332-43255f05f35f</source_ui_id>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>83528ee0c3efcf1043d978cc05013115</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:34</sys_updated_on>
+        <transform_compositions>[{"id":"9c4cf2c60f4130106d1a3a3485767ef7","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="convert_string_to_number">bfac1e0e0f0130106d1a3a3485767e8a</transform_definition_id>
+        <ui_id>eeb750ab-dce1-4124-8856-1983e3b1caae</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2e524ee0c3efcf1043d978cc0501314f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{7f8f1405-7291-463b-af14-be59929e3624.item.amount}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>87528ee0c3efcf1043d978cc05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:34</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>796e6d67-106b-43d8-a882-a150b61972bb</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2e524ee0c3efcf1043d978cc0501314f</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>ca0977f0-f58c-46a0-aaf2-f273804740a9</source_ui_id>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>c3528ee0c3efcf1043d978cc05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:34</sys_updated_on>
+        <transform_compositions>[{"id":"9c4cf2c60f4130106d1a3a3485767ef7","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="convert_string_to_number">bfac1e0e0f0130106d1a3a3485767e8a</transform_definition_id>
+        <ui_id>cffa27a6-17f6-47b6-a52f-957ffd4c673b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2e524ee0c3efcf1043d978cc0501314f</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>796e6d67-106b-43d8-a882-a150b61972bb</source_ui_id>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>cf528ee0c3efcf1043d978cc05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:34</sys_updated_on>
+        <transform_compositions>[{"id":"179b33040f333300f4166fe7c4767e75","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="sum">bd7b3bc00f333300f4166fe7c4767ebe</transform_definition_id>
+        <ui_id>2f30b44a-c96e-4044-a7d0-3e66693bf9d1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2e524ee0c3efcf1043d978cc0501314f^sys_idNOT IN7a524ee0c3efcf1043d978cc050131ad,cb524ee0c3efcf1043d978cc050131eb,f2524ee0c3efcf1043d978cc050131b4"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=5478819c-eb6c-49f5-abfc-7ba8511c2cbf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</model>
+        <model_id>2e524ee0c3efcf1043d978cc0501314f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_2e524ee0c3efcf1043d978cc0501314f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:33</sys_created_on>
+        <sys_id>7a524ee0c3efcf1043d978cc050131ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=e41ff261-a39d-4cec-9844-385ec8f8d6d0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>total_amount</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Final Total Amount</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</model>
+        <model_id>2e524ee0c3efcf1043d978cc0501314f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_2e524ee0c3efcf1043d978cc0501314f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:34</sys_created_on>
+        <sys_id>cb524ee0c3efcf1043d978cc050131eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5cfbd958-bb5f-453b-acec-5c3e0d83efc9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>total_amount_sum</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Total Amount (String)</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Budget &amp; Cap Validation">2e524ee0c3efcf1043d978cc0501314f</model>
+        <model_id>2e524ee0c3efcf1043d978cc0501314f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_2e524ee0c3efcf1043d978cc0501314f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:33</sys_created_on>
+        <sys_id>f2524ee0c3efcf1043d978cc050131b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>reward_request</element>
+        <help/>
+        <hint/>
+        <label>Reward Request</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2e524ee0c3efcf1043d978cc0501314f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:33</sys_created_on>
+        <sys_id>b2524ee0c3efcf1043d978cc05013180</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2e524ee0c3efcf1043d978cc0501314f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_2e524ee0c3efcf1043d978cc0501314f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:33</sys_created_on>
+        <sys_id>76524ee0c3efcf1043d978cc0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 11:38:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2e524ee0c3efcf1043d978cc0501314f"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>c7d9b120c3afcf1043d978cc050131e1</sys_id>
+        <latest_snapshot>2e524ee0c3efcf1043d978cc0501314f</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c7d9b120c3afcf1043d978cc050131e1"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c7d9b120c3afcf1043d978cc050131e1^sys_idNOT IN53528ee0c3efcf1043d978cc05013140"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@3d336b4b</plan>
+        <plan_id display_value="Budget &amp; Cap Validation">c7d9b120c3afcf1043d978cc050131e1</plan_id>
+        <snapshot>2e524ee0c3efcf1043d978cc0501314f</snapshot>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 11:38:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>53528ee0c3efcf1043d978cc05013140</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 06:23:23</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

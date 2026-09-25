@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_1921751_employ_0_reward_request</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>x_1921751_employ_0.reward.budget.exceede</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<div style="font-family: 'Segoe UI', Arial, sans-serif; line-height: 24px; font-size: 15px; color: #2d3748;"><!-- Status Header -->
+<div style="text-align: center; padding-bottom: 20px; border-bottom: 1px solid #E2E8F0;"><span style="background-color: #fff1f2; color: #be123c; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; letter-spacing: 0.5px;">Financial Alert</span>
+<h2 style="font-size: 22px; font-weight: bold; color: #0b192c; margin: 12px 0 0 0;">Budget Threshold Exceeded</h2>
+</div>
+<!-- Main Message -->
+<div style="padding-top: 20px;">
+<p style="margin: 0 0 16px 0;">Hi <strong>${requested_by.first_name}</strong>,</p>
+<p style="margin: 0 0 20px 0;">This is an automated alert to inform you that the allocated budget limit for <strong>${reward_type.reward_type}</strong> has been exceeded.</p>
+</div>
+<div style="border-top: 1px solid #E2E8F0; padding-top: 16px; margin-top: 24px; color: #718096; font-size: 13px;">Best regards,<br><strong style="color: #0b192c;">Bangmetric Finance Team</strong></div>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Budget Exceeded</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>requested_by</recipient_fields>
+        <recipient_groups/>
+        <recipient_users>c3dddb72c3df431043d978cc05013119</recipient_users>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Reward Budget Exceeded for Reward Request: ${number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-25 03:40:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b5707391c327c75043d978cc050131e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Budget Exceeded</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sysevent_email_action_b5707391c327c75043d978cc050131e4</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 03:40:15</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="ERM Email Template">4ba7f0d1c32f475043d978cc0501312d</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

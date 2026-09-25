@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="INSERT_OR_UPDATE">
+        <decision_input display_value="amount">c7957de4c36fcf1043d978cc05013129</decision_input>
+        <decision_table display_value="Approval Matrix">fb192d2cc3ebcf1043d978cc05013183</decision_table>
+        <default_operator>=</default_operator>
+        <description/>
+        <field/>
+        <field_label/>
+        <field_parent_table/>
+        <label>amount</label>
+        <order>50</order>
+        <parent/>
+        <reference/>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>24a5fde4c36fcf1043d978cc05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_24a5fde4c36fcf1043d978cc05013151</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:58</sys_updated_on>
+        <type display_value="Decimal">f52567c1bf3320001875647fcf07396a</type>
+    </sn_decision_table_decision_condition>
+</record_update>

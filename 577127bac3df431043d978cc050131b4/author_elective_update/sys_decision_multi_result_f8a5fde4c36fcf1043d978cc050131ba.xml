@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="DELETE">
+        <decision_table display_value="Approval Matrix">fb192d2cc3ebcf1043d978cc05013183</decision_table>
+        <label>Reporting Manager Approval: true, Department Head Approval: false, HR Approval: false, Finance Approval: false, Reporting Manager SLA Days: 2</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f8a5fde4c36fcf1043d978cc050131ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reporting Manager Approval: true, Department Head Approval: false, HR Approval: false, Finance Approval: false, Reporting Manager SLA Days: 2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_decision_multi_result_f8a5fde4c36fcf1043d978cc050131ba</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="DELETE" query="document_key=f8a5fde4c36fcf1043d978cc050131ba"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>30a5fde4c36fcf1043d978cc050131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Finance Approval">0ca5bde4c36fcf1043d978cc0501319e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>3ca5fde4c36fcf1043d978cc050131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Reporting Manager Approval">d7957de4c36fcf1043d978cc05013196</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>70a5fde4c36fcf1043d978cc050131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Department Head Approval">fb957de4c36fcf1043d978cc050131fc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>b0a5fde4c36fcf1043d978cc050131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value/>
+        <variable display_value="Department Head SLA days">7395bde4c36fcf1043d978cc05013135</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>b4a5fde4c36fcf1043d978cc050131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="HR Approval">7395bde4c36fcf1043d978cc05013154</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>f4a5fde4c36fcf1043d978cc050131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value/>
+        <variable display_value="Finance Approval SLA Days">90a5fde4c36fcf1043d978cc05013116</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>f8a5fde4c36fcf1043d978cc050131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value>2</value>
+        <variable display_value="Reporting Manager SLA Days">eb957de4c36fcf1043d978cc050131dd</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sys_decision_multi_result_f8a5fde4c36fcf1043d978cc050131ba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result"><sys_decision_multi_result action="INSERT_OR_UPDATE"><decision_table display_value="Approval Matrix">fb192d2cc3ebcf1043d978cc05013183</decision_table><label>Reporting Manager Approval: true, Department Head Approval: false, HR Approval: false, Finance Approval: false, Reporting Manager SLA Days: 2</label><result_elements/><sys_class_name>sys_decision_multi_result</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-22 10:42:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f8a5fde4c36fcf1043d978cc050131ba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Reporting Manager Approval: true, Department Head Approval: false, HR Approval: false, Finance Approval: false, Reporting Manager SLA Days: 2</sys_name><sys_overrides/><sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package><sys_policy/><sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope><sys_update_name>sys_decision_multi_result_f8a5fde4c36fcf1043d978cc050131ba</sys_update_name><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-22 10:42:59</sys_updated_on></sys_decision_multi_result><sys_variable_value action="delete_multiple" query="document_key=f8a5fde4c36fcf1043d978cc050131ba"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key><order>400</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-22 10:42:59</sys_created_on><sys_id>30a5fde4c36fcf1043d978cc050131bd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-22 10:42:59</sys_updated_on><value>0</value><variable display_value="Finance Approval">0ca5bde4c36fcf1043d978cc0501319e</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-22 10:42:59</sys_created_on><sys_id>3ca5fde4c36fcf1043d978cc050131bb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-22 10:42:59</sys_updated_on><value>1</value><variable display_value="Reporting Manager Approval">d7957de4c36fcf1043d978cc05013196</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-22 10:42:59</sys_created_on><sys_id>70a5fde4c36fcf1043d978cc050131bc</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-22 10:42:59</sys_updated_on><value>0</value><variable display_value="Department Head Approval">fb957de4c36fcf1043d978cc050131fc</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key><order>250</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-22 10:42:59</sys_created_on><sys_id>b0a5fde4c36fcf1043d978cc050131bb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-22 10:42:59</sys_updated_on><value/><variable display_value="Department Head SLA days">7395bde4c36fcf1043d978cc05013135</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key><order>300</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-22 10:42:59</sys_created_on><sys_id>b4a5fde4c36fcf1043d978cc050131bc</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-22 10:42:59</sys_updated_on><value>0</value><variable display_value="HR Approval">7395bde4c36fcf1043d978cc05013154</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key><order>500</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-22 10:42:59</sys_created_on><sys_id>f4a5fde4c36fcf1043d978cc050131bb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-22 10:42:59</sys_updated_on><value/><variable display_value="Finance Approval SLA Days">90a5fde4c36fcf1043d978cc05013116</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>f8a5fde4c36fcf1043d978cc050131ba</document_key><order>150</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-22 10:42:59</sys_created_on><sys_id>f8a5fde4c36fcf1043d978cc050131bc</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-22 10:42:59</sys_updated_on><value>2</value><variable display_value="Reporting Manager SLA Days">eb957de4c36fcf1043d978cc050131dd</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-411028250</payload_hash>
+        <record_name>Reporting Manager Approval: true, Department Head Approval: false, HR Approval: false, Finance Appro</record_name>
+        <reverted_from/>
+        <source>60176928c3ebcf1043d978cc050131e6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>30a5fde4c36fcf1043d978cc050131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0c8b635eb0000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <type>Decision Table Multiple Result</type>
+        <update_guid>fca5fde4d36fcf10bb1d3a35c72ec1be</update_guid>
+        <update_guid_history>fca5fde4d36fcf10bb1d3a35c72ec1be:-411028250</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-23 06:18:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_multi_result">sys_decision_multi_result</sys_db_object>
+        <sys_id>5e79ed5af69840b899b34618b811a840</sys_id>
+        <sys_metadata>f8a5fde4c36fcf1043d978cc050131ba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reporting Manager Approval: true, Department Head Approval: false, HR Approval: false, Finance Approval: false, Reporting Manager SLA Days: 2</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sys_decision_multi_result_f8a5fde4c36fcf1043d978cc050131ba</sys_update_name>
+        <sys_update_version display_value="sys_decision_multi_result_f8a5fde4c36fcf1043d978cc050131ba">30a5fde4c36fcf1043d978cc050131c0</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-23 06:18:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

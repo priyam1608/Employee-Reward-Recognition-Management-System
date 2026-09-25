@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="Approval Matrix">fb192d2cc3ebcf1043d978cc05013183</decision_table>
+        <label>Reporting Manager Approval: false, Department Head Approval: false, HR Approval: false, Finance Approval: false</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f0a5fde4c36fcf1043d978cc050131c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reporting Manager Approval: false, Department Head Approval: false, HR Approval: false, Finance Approval: false</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_decision_multi_result_f0a5fde4c36fcf1043d978cc050131c7</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=f0a5fde4c36fcf1043d978cc050131c7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f0a5fde4c36fcf1043d978cc050131c7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>34a5fde4c36fcf1043d978cc050131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Reporting Manager Approval">d7957de4c36fcf1043d978cc05013196</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f0a5fde4c36fcf1043d978cc050131c7</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>38a5fde4c36fcf1043d978cc050131c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Finance Approval">0ca5bde4c36fcf1043d978cc0501319e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f0a5fde4c36fcf1043d978cc050131c7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>78a5fde4c36fcf1043d978cc050131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Department Head Approval">fb957de4c36fcf1043d978cc050131fc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>f0a5fde4c36fcf1043d978cc050131c7</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:42:59</sys_created_on>
+        <sys_id>bca5fde4c36fcf1043d978cc050131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:42:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="HR Approval">7395bde4c36fcf1043d978cc05013154</variable>
+    </sys_variable_value>
+</record_update>

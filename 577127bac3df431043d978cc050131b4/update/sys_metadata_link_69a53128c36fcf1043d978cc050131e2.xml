@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>65a53128c36fcf1043d978cc050131c8</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>f0a5fde4c36fcf1043d978cc050131c7</answer>
+        <condition/>
+        <decision_table display_value="Approval Matrix">fb192d2cc3ebcf1043d978cc05013183</decision_table>
+        <default_answer>true</default_answer>
+        <input_table>var__m_sys_decision_input_fb192d2cc3ebcf1043d978cc05013183</input_table>
+        <label>Approval Matrix default result</label>
+        <marked_for_deletion>false</marked_for_deletion>
+        <order>100</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:43:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>65a53128c36fcf1043d978cc050131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Matrix default result</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_decision_question_65a53128c36fcf1043d978cc050131c8</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:43:02</sys_updated_on>
+    </sys_decision_question>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:43:02</sys_created_on>
+        <sys_id>69a53128c36fcf1043d978cc050131e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Matrix default result</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_metadata_link_69a53128c36fcf1043d978cc050131e2</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:43:02</sys_updated_on>
+        <tablename>sys_decision_question</tablename>
+    </sys_metadata_link>
+</record_update>

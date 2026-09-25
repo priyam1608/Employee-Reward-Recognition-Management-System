@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="DELETE">
+        <active>true</active>
+        <answer>0d051624c363035043d978cc050131ac</answer>
+        <condition table="var__m_sys_decision_input_fb192d2cc3ebcf1043d978cc05013183">u_amount&lt;5000^u_reward_type=16d7c413c313071043d978cc05013180^EQ<item endquery="false" field="u_amount" goto="false" newquery="false" operator="&lt;" or="false" value="5000"/>
+            <item display_table="x_1921751_employ_0_reward_catalog" display_value="Spot Bonus" endquery="false" field="u_reward_type" goto="false" newquery="false" operator="=" or="false" value="16d7c413c313071043d978cc05013180"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Approval Matrix">fb192d2cc3ebcf1043d978cc05013183</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_fb192d2cc3ebcf1043d978cc05013183</input_table>
+        <label>Approval Matrix_100</label>
+        <marked_for_deletion>true</marked_for_deletion>
+        <order>100</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 12:38:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d110d2a0c363035043d978cc05013183</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Approval Matrix_100</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_decision_question_d110d2a0c363035043d978cc05013183</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-23 06:15:03</sys_updated_on>
+    </sys_decision_question>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sys_decision_question_d110d2a0c363035043d978cc05013183</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question"><sys_decision_question action="INSERT_OR_UPDATE"><active>true</active><answer>0d051624c363035043d978cc050131ac</answer><condition table="var__m_sys_decision_input_fb192d2cc3ebcf1043d978cc05013183">u_amount&lt;5000^u_reward_type=16d7c413c313071043d978cc05013180^EQ<item endquery="false" field="u_amount" goto="false" newquery="false" operator="&lt;" or="false" value="5000"/><item display_table="x_1921751_employ_0_reward_catalog" display_value="Spot Bonus" endquery="false" field="u_reward_type" goto="false" newquery="false" operator="=" or="false" value="16d7c413c313071043d978cc05013180"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><decision_table display_value="Approval Matrix">fb192d2cc3ebcf1043d978cc05013183</decision_table><default_answer>false</default_answer><input_table>var__m_sys_decision_input_fb192d2cc3ebcf1043d978cc05013183</input_table><label>Approval Matrix_100</label><marked_for_deletion>true</marked_for_deletion><order>100</order><sys_class_name>sys_decision_question</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-22 12:38:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d110d2a0c363035043d978cc05013183</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Approval Matrix_100</sys_name><sys_overrides/><sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package><sys_policy/><sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope><sys_update_name>sys_decision_question_d110d2a0c363035043d978cc05013183</sys_update_name><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-23 06:15:03</sys_updated_on></sys_decision_question></record_update>]]></payload>
+        <payload_hash>451742279</payload_hash>
+        <record_name>Approval Matrix_100</record_name>
+        <reverted_from/>
+        <source>60176928c3ebcf1043d978cc050131e6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-23 06:15:03</sys_created_on>
+        <sys_id>31e106b8c323835043d978cc05013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cce745ff0000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-23 06:15:03</sys_updated_on>
+        <type>Decision</type>
+        <update_guid>7de106b82623835036c911b2234c2b97</update_guid>
+        <update_guid_history>7de106b82623835036c911b2234c2b97:451742279,8905126c43630350473c3c2c5afd33e7:189052336,2910d2a0ba63035053aff87d2c43db8b:-1503343319</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-23 06:18:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_question">sys_decision_question</sys_db_object>
+        <sys_id>09446581bda443cc90202e0c68734fc4</sys_id>
+        <sys_metadata>d110d2a0c363035043d978cc05013183</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Matrix_100</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sys_decision_question_d110d2a0c363035043d978cc05013183</sys_update_name>
+        <sys_update_version display_value="sys_decision_question_d110d2a0c363035043d978cc05013183">31e106b8c323835043d978cc05013199</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-23 06:18:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="DELETE">
+        <decision_input display_value="amount">1fb02851c36b475043d978cc050131d3</decision_input>
+        <decision_table display_value="Approval Matrix delta">9bb0e451c36b475043d978cc050131ec</decision_table>
+        <default_operator>=</default_operator>
+        <description/>
+        <field/>
+        <field_label/>
+        <field_parent_table/>
+        <label>amount</label>
+        <order>50</order>
+        <parent display_value="">24a5fde4c36fcf1043d978cc05013151</parent>
+        <reference/>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-24 12:27:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d8c0a851c36b475043d978cc05013115</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_d8c0a851c36b475043d978cc05013115</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-24 12:27:34</sys_updated_on>
+        <type display_value="Decimal">f52567c1bf3320001875647fcf07396a</type>
+    </sn_decision_table_decision_condition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sn_decision_table_decision_condition_d8c0a851c36b475043d978cc05013115</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition"><sn_decision_table_decision_condition action="INSERT_OR_UPDATE"><decision_input display_value="amount">1fb02851c36b475043d978cc050131d3</decision_input><decision_table display_value="Approval Matrix delta">9bb0e451c36b475043d978cc050131ec</decision_table><default_operator>=</default_operator><description/><field/><field_label/><field_parent_table/><label>amount</label><order>50</order><parent display_value="">24a5fde4c36fcf1043d978cc05013151</parent><reference/><sys_class_name>sn_decision_table_decision_condition</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-24 12:27:34</sys_created_on><sys_domain>global</sys_domain><sys_id>d8c0a851c36b475043d978cc05013115</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package><sys_policy/><sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope><sys_update_name>sn_decision_table_decision_condition_d8c0a851c36b475043d978cc05013115</sys_update_name><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-24 12:27:34</sys_updated_on><type display_value="Decimal">f52567c1bf3320001875647fcf07396a</type></sn_decision_table_decision_condition></record_update>]]></payload>
+        <payload_hash>951229382</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>60176928c3ebcf1043d978cc050131e6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-24 12:27:34</sys_created_on>
+        <sys_id>18c0a851c36b475043d978cc05013126</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0d362adc80000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-24 12:27:34</sys_updated_on>
+        <type>Decision Condition</type>
+        <update_guid>d4c0a851576b47500c28e4396ace0325</update_guid>
+        <update_guid_history>d4c0a851576b47500c28e4396ace0325:951229382</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">34b22095c36b475043d978cc050131c8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-24 12:36:05</sys_created_on>
+        <sys_db_object display_value="" name="sn_decision_table_decision_condition">sn_decision_table_decision_condition</sys_db_object>
+        <sys_id>10b95d7954414a1a91ee739b6ad510a1</sys_id>
+        <sys_metadata>d8c0a851c36b475043d978cc05013115</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sn_decision_table_decision_condition_d8c0a851c36b475043d978cc05013115</sys_update_name>
+        <sys_update_version display_value="sn_decision_table_decision_condition_d8c0a851c36b475043d978cc05013115">18c0a851c36b475043d978cc05013126</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-24 12:36:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

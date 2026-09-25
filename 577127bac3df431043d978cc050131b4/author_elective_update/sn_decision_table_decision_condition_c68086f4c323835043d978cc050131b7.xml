@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="DELETE">
+        <decision_input display_value="Reward Type">6c8006f4c323835043d978cc050131d8</decision_input>
+        <decision_table display_value="Approval Matrix delta">54804eb4c323835043d978cc05013119</decision_table>
+        <default_operator>=</default_operator>
+        <description/>
+        <field/>
+        <field_label/>
+        <field_parent_table/>
+        <label>Reward Type</label>
+        <order>150</order>
+        <parent display_value="">7ca5fde4c36fcf1043d978cc0501318a</parent>
+        <reference display_value="Reward Catalog" name="x_1921751_employ_0_reward_catalog">06410883c317831043d978cc050131eb</reference>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-23 06:09:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c68086f4c323835043d978cc050131b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_c68086f4c323835043d978cc050131b7</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-23 06:09:04</sys_updated_on>
+        <type display_value="Reference">52a227c1bf3320001875647fcf07396a</type>
+    </sn_decision_table_decision_condition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sn_decision_table_decision_condition_c68086f4c323835043d978cc050131b7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition"><sn_decision_table_decision_condition action="INSERT_OR_UPDATE"><decision_input display_value="Reward Type">6c8006f4c323835043d978cc050131d8</decision_input><decision_table display_value="Approval Matrix delta">54804eb4c323835043d978cc05013119</decision_table><default_operator>=</default_operator><description/><field/><field_label/><field_parent_table/><label>Reward Type</label><order>150</order><parent display_value="">7ca5fde4c36fcf1043d978cc0501318a</parent><reference display_value="Reward Catalog" name="x_1921751_employ_0_reward_catalog">06410883c317831043d978cc050131eb</reference><sys_class_name>sn_decision_table_decision_condition</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-23 06:09:04</sys_created_on><sys_domain>global</sys_domain><sys_id>c68086f4c323835043d978cc050131b7</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package><sys_policy/><sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope><sys_update_name>sn_decision_table_decision_condition_c68086f4c323835043d978cc050131b7</sys_update_name><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-23 06:09:04</sys_updated_on><type display_value="Reference">52a227c1bf3320001875647fcf07396a</type></sn_decision_table_decision_condition></record_update>]]></payload>
+        <payload_hash>-697984292</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>60176928c3ebcf1043d978cc050131e6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-23 06:09:04</sys_created_on>
+        <sys_id>028086f4c323835043d978cc050131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cce1c9d50000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-23 06:09:04</sys_updated_on>
+        <type>Decision Condition</type>
+        <update_guid>ce8086f456238350b0cc6ca5aee335b9</update_guid>
+        <update_guid_history>ce8086f456238350b0cc6ca5aee335b9:-697984292</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">e3c2c63cc323835043d978cc050131cb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-23 06:19:00</sys_created_on>
+        <sys_db_object display_value="" name="sn_decision_table_decision_condition">sn_decision_table_decision_condition</sys_db_object>
+        <sys_id>36ae24c94ca84200ba5e8c510a6fa100</sys_id>
+        <sys_metadata>c68086f4c323835043d978cc050131b7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sn_decision_table_decision_condition_c68086f4c323835043d978cc050131b7</sys_update_name>
+        <sys_update_version display_value="sn_decision_table_decision_condition_c68086f4c323835043d978cc050131b7">028086f4c323835043d978cc050131bb</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-23 06:19:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

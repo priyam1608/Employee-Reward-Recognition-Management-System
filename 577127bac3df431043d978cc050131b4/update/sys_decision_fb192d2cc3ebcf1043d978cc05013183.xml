@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision">
+    <sys_decision action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <answer_table>sys_decision_multi_result</answer_table>
+        <answer_type>reference</answer_type>
+        <delta/>
+        <description/>
+        <enable_publishing>true</enable_publishing>
+        <label/>
+        <name>Approval Matrix</name>
+        <reference_qualifier/>
+        <status>published</status>
+        <sys_class_name>sys_decision</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 09:48:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fb192d2cc3ebcf1043d978cc05013183</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Approval Matrix</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_decision_fb192d2cc3ebcf1043d978cc05013183</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-24 12:36:08</sys_updated_on>
+    </sys_decision>
+</record_update>

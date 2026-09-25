@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_1921751_employ_0_reward_request</collection>
+        <condition/>
+        <content_type>multipart/mixed</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>x_1921751_employ_0.approval.requested</event_name>
+        <event_parm_1>true</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<div style="font-family: 'Segoe UI', Arial, sans-serif; line-height: 24px; font-size: 15px; color: #2d3748;"><!-- Status Header -->
+<div style="text-align: center; padding-bottom: 20px; border-bottom: 1px solid #E2E8F0;"><span style="background-color: #ebf8ff; color: #2b6cb0; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; letter-spacing: 0.5px;">Action Required</span>
+<h2 style="font-size: 22px; font-weight: bold; color: #0b192c; margin: 12px 0 0 0;">Approval Requested</h2>
+</div>
+<!-- Main Message -->
+<div style="padding-top: 20px;">
+<p style="margin: 0 0 16px 0;">Hello <strong>${current_approver.first_name}</strong></p>
+<p style="margin: 0 0 20px 0;">An approval request has been submitted for <strong>RITM Number: ${ritm.number}</strong>&nbsp;and requires your review.</p>
+<!-- Summary Box -->
+<div style="background-color: #f8fafc; border-left: 4px solid #00ADB5; padding: 16px; border-radius: 4px; margin-bottom: 24px;">
+<table style="height: 48px;" width="100%" cellspacing="0" cellpadding="4">
+<tbody>
+<tr style="height: 24px;">
+<td style="color: rgb(113, 128, 150); font-size: 13px; font-weight: 600; height: 24px;" width="30%">REQUESTER:</td>
+<td style="color: rgb(45, 55, 72); font-size: 14px; font-weight: 600; height: 24px;">${requested_by.user_name}</td>
+</tr>
+<tr style="height: 24px;">
+<td style="color: rgb(113, 128, 150); font-size: 13px; font-weight: 600; height: 24px;">DETAILS:</td>
+<td style="color: rgb(45, 55, 72); font-size: 14px; height: 24px; word-break: break-all;"><strong>${justification}</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Sign-off -->
+<div style="border-top: 1px solid #E2E8F0; padding-top: 16px; margin-top: 24px; color: #718096; font-size: 13px;">Best regards,<br><strong style="color: #0b192c;">Bangmetric Approval System</strong></div>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Approval Requested</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>current_approver</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Approval Requested for RITM Number: ${ritm.number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-23 09:47:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>15623234c3e7835043d978cc0501315c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Approval Requested</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sysevent_email_action_15623234c3e7835043d978cc0501315c</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 03:53:46</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="ERM Email Template">4ba7f0d1c32f475043d978cc0501312d</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>15623234c3e7835043d978cc0501315c</id>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-23 10:12:39</sys_created_on>
+        <sys_id>4e483e70c32b835043d978cc05013192</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-23 10:12:39</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

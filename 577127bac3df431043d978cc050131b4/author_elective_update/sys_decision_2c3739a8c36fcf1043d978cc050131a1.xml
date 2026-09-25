@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision">
+    <sys_decision action="DELETE">
+        <access>package_private</access>
+        <active>false</active>
+        <answer_table>sys_decision_multi_result</answer_table>
+        <answer_type>reference</answer_type>
+        <delta/>
+        <description/>
+        <enable_publishing>true</enable_publishing>
+        <label/>
+        <name>Reward Request Orchestrator</name>
+        <reference_qualifier/>
+        <status>draft</status>
+        <sys_class_name>sys_decision</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:49:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2c3739a8c36fcf1043d978cc050131a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reward Request Orchestrator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_decision_2c3739a8c36fcf1043d978cc050131a1</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:49:48</sys_updated_on>
+    </sys_decision>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</application>
+        <file_path/>
+        <instance_id>eb7ef7fe1beafd906a85eb9b2d4bcb91</instance_id>
+        <instance_name>dev219002</instance_name>
+        <name>sys_decision_2c3739a8c36fcf1043d978cc050131a1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision"><sys_decision action="INSERT_OR_UPDATE"><access>package_private</access><active>false</active><answer_table>sys_decision_multi_result</answer_table><answer_type>reference</answer_type><delta/><description/><enable_publishing>true</enable_publishing><label/><name>Reward Request Orchestrator</name><reference_qualifier/><status>draft</status><sys_class_name>sys_decision</sys_class_name><sys_created_by>priyam01</sys_created_by><sys_created_on>2026-09-22 10:49:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2c3739a8c36fcf1043d978cc050131a1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Reward Request Orchestrator</sys_name><sys_overrides/><sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package><sys_policy/><sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope><sys_update_name>sys_decision_2c3739a8c36fcf1043d978cc050131a1</sys_update_name><sys_updated_by>priyam01</sys_updated_by><sys_updated_on>2026-09-22 10:49:48</sys_updated_on></sys_decision></record_update>]]></payload>
+        <payload_hash>1046794684</payload_hash>
+        <record_name>Reward Request Orchestrator</record_name>
+        <reverted_from/>
+        <source>60176928c3ebcf1043d978cc050131e6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:49:48</sys_created_on>
+        <sys_id>603739a8c36fcf1043d978cc050131a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0c8bc72f70000001</sys_recorded_at>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:49:48</sys_updated_on>
+        <type>Decision Table</type>
+        <update_guid>203739a81b6fcf103cd88265d8b9eda4</update_guid>
+        <update_guid_history>203739a81b6fcf103cd88265d8b9eda4:1046794684</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-22 10:50:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision">sys_decision</sys_db_object>
+        <sys_id>01bc79493d4647a08004a2671f10d100</sys_id>
+        <sys_metadata>2c3739a8c36fcf1043d978cc050131a1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reward Request Orchestrator</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_scope_delete display_value="">14d62b07bde3476089ffa06a836fd910</sys_scope_delete>
+        <sys_update_name>sys_decision_2c3739a8c36fcf1043d978cc050131a1</sys_update_name>
+        <sys_update_version display_value="sys_decision_2c3739a8c36fcf1043d978cc050131a1">603739a8c36fcf1043d978cc050131a5</sys_update_version>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-22 10:50:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
