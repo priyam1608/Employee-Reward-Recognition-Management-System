@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Approval Turnaround Report">788b09a9c3230b5043d978cc05013195</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-25 10:12:51</sys_created_on>
+        <sys_id>b88b09a9c3230b5043d978cc05013196</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>788b09a9c3230b5043d978cc05013195</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_report_users_groups_b88b09a9c3230b5043d978cc05013196</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-25 10:12:51</sys_updated_on>
+        <user_id display_value="Priyam Sharma">c3dddb72c3df431043d978cc05013119</user_id>
+    </sys_report_users_groups>
+</record_update>
