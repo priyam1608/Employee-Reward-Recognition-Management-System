@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <aria_label/>
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Test Page - Container 1</name>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_page display_value="test_page">7048ea39c3af8b5043d978cc05013188</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-26 11:38:17</sys_created_on>
+        <sys_id>79a86a79c3af8b5043d978cc0501319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Page - Container 1</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sp_container_79a86a79c3af8b5043d978cc0501319c</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-26 11:38:17</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

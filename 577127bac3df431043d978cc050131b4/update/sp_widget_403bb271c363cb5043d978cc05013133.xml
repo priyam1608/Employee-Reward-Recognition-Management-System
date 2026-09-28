@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.img-styling{
+  height: 50% !important;
+  width: 50% !important;
+  max-width: 100%;
+}
+div{
+	text-align: left;
+}
+
+/* tablets */
+@media (max-width: 991px){
+  .img-styling{
+    width: 75% !important;
+    height: auto !important;
+  }
+}
+
+/* phones */
+@media (max-width: 767px){
+  .img-styling{
+    width: 100% !important;
+    height: auto !important;
+  }
+}</css>
+        <data_table>sp_instance_carousel</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>interval</field_list>
+        <has_preview>true</has_preview>
+        <id>reward_catalog_banner</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Reward Catalog Banner</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[// data.slides = $sp.getRelatedList('sp_carousel_slide','carousel');
+
+data.slides = [];
+var slideConfig = [
+	{	image: '/x_1921751_employ_0.extra_leave_credit_image.png',
+	  url: '?id=sc_cat_item&sys_id=2357dfb7c3578b1043d978cc050131ef' },
+	{ image: '/x_1921751_employ_0.spot_image1.jpeg',
+	  url: '?id=sc_cat_item&sys_id=9f237aa7c3dfc71043d978cc050131d2' },
+	{ image: '/x_1921751_employ_0.spot_high_value_image.jpeg',
+	  url: '?id=sc_cat_item&sys_id=9f237aa7c3dfc71043d978cc050131d2' },
+	{ image: '/x_1921751_employ_0.team_recognition_award_image.jpeg',
+	  url: '?id=sc_cat_item&sys_id=47b75fbfc35f4b1043d978cc05013180' },
+	{ image: '/x_1921751_employ_0.voucher_image.jpeg',
+	  url: '?id=sc_cat_item&sys_id=722757b7c3578b1043d978cc0501318b' }
+];
+
+var gr = new GlideRecordSecure('x_1921751_employ_0_reward_catalog');
+gr.addQuery('active', true);
+gr.orderBy('reward_type');
+gr.query();
+var i = 0;
+while (gr.next()) {
+	var cfg = slideConfig[i % slideConfig.length];
+	data.slides.push({
+		name: gr.getDisplayValue('reward_type'),
+		alt_text: gr.getDisplayValue('reward_type'),
+		description: gr.getDisplayValue('description'),
+		background: cfg.image,
+		url: cfg.url
+	});
+	i++;
+}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-26 12:59:16</sys_created_on>
+        <sys_id>403bb271c363cb5043d978cc05013133</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Reward Catalog Banner</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sp_widget_403bb271c363cb5043d978cc05013133</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-28 11:16:15</sys_updated_on>
+        <template><![CDATA[<div class="pull-in">
+  <uib-carousel interval="options.interval">
+    <uib-slide ng-repeat="slide in ::data.slides" active="slide.active">
+      <div class="container">
+        <a ng-if="slide.url" ng-href="{{::slide.url}}">
+          <img ng-src="{{::slide.background}}" class="img-styling" alt="{{::slide.alt_text || slide.name}}">
+        </a>
+        <img ng-if="!slide.url" ng-src="{{::slide.background}}" alt="{{::slide.alt_text || slide.name}}">
+      </div>
+    </uib-slide>
+  </uib-carousel>
+</div>]]></template>
+    </sp_widget>
+</record_update>
