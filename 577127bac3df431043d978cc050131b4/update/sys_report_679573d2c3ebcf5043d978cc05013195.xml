@@ -49,8 +49,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>department</field>
         <field_list>department,quarter,year,allocated_budget,consumed_budget,remaining_budget</field_list>
-        <filter table="x_1921751_employ_0_department_reward_budget">year=2026<item endquery="false" field="year" goto="false" newquery="false" operator="=" or="false" value="2026"/>
-        </filter>
+        <filter/>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -94,7 +93,7 @@
         <sc_stackby_item_id/>
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
-        <series_name_text/>
+        <series_name_text>Allocated Budget</series_name_text>
         <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
@@ -110,14 +109,14 @@
         <source_type>table</source_type>
         <start_time/>
         <style_config/>
-        <sumfield>remaining_budget</sumfield>
+        <sumfield>allocated_budget</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>priyam01</sys_created_by>
         <sys_created_on>2026-09-28 06:31:30</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>679573d2c3ebcf5043d978cc05013195</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Department Budget Snapshot</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
@@ -125,7 +124,7 @@
         <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
         <sys_update_name>sys_report_679573d2c3ebcf5043d978cc05013195</sys_update_name>
         <sys_updated_by>priyam01</sys_updated_by>
-        <sys_updated_on>2026-09-28 06:53:29</sys_updated_on>
+        <sys_updated_on>2026-09-30 12:23:59</sys_updated_on>
         <table>x_1921751_employ_0_department_reward_budget</table>
         <title>Department Budget Snapshot</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
@@ -136,7 +135,7 @@
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
         <use_null_in_trend>false</use_null_in_trend>
-        <user>c3dddb72c3df431043d978cc05013119</user>
+        <user>GLOBAL</user>
         <x_axis_allow_decimals>true</x_axis_allow_decimals>
         <x_axis_display_grid>false</x_axis_display_grid>
         <x_axis_grid_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</x_axis_grid_color>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_layer">
+    <sys_report_layer action="INSERT_OR_UPDATE">
+        <aggregate>SUM</aggregate>
+        <aggregation_source>no_override</aggregation_source>
+        <allow_data_label_overlap>false</allow_data_label_overlap>
+        <bar_unstack>true</bar_unstack>
+        <color display_value="UI14 Yellow">ce56c9b3d7332100fa6c0c12ce610334</color>
+        <color_palette display_value="Sequential - Violets dark to light (8)">7f3962d54d77186aab2104c424409180</color_palette>
+        <colors/>
+        <compute_percent>aggregate</compute_percent>
+        <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
+        <field>department</field>
+        <filter/>
+        <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
+        <import_table/>
+        <interval>year</interval>
+        <list_ui_view/>
+        <report display_value="Department Budget Snapshot">679573d2c3ebcf5043d978cc05013195</report>
+        <report_source/>
+        <sequence>2</sequence>
+        <series_name_text>Remaining Budget</series_name_text>
+        <set_color>color_palette</set_color>
+        <show_2nd_y_axis>false</show_2nd_y_axis>
+        <show_chart_data_label>false</show_chart_data_label>
+        <show_data_label_position_middle>false</show_data_label_position_middle>
+        <show_marker>false</show_marker>
+        <source_type>table</source_type>
+        <style_config/>
+        <sumfield>remaining_budget</sumfield>
+        <sys_class_name>sys_report_layer</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-30 12:22:05</sys_created_on>
+        <sys_id>de099b0fc36f479043d978cc05013116</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Remaining Budget</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>sys_report_layer_de099b0fc36f479043d978cc05013116</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-30 12:22:05</sys_updated_on>
+        <table>x_1921751_employ_0_department_reward_budget</table>
+        <trend_field>quarter</trend_field>
+        <type>bar</type>
+        <use_null_in_trend>false</use_null_in_trend>
+        <y_axis_from/>
+        <y_axis_title/>
+        <y_axis_to/>
+    </sys_report_layer>
+</record_update>

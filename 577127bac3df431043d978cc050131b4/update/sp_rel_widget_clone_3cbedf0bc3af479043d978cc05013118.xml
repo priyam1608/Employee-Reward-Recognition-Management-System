@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
     <sp_rel_widget_clone action="INSERT_OR_UPDATE">
-        <child display_value="Department Budget Snapshot 1">21aaece6c3a3039043d978cc0501310f</child>
+        <child display_value="Department Budget Snapshot 2">78be9f07c3af479043d978cc050131d3</child>
         <cloned>2026-09-28 10:23:12</cloned>
         <last_validated>2026-09-28 10:23:12</last_validated>
         <parent display_value="Report">e41aa2d29f0222008252baac757fcfce</parent>
@@ -197,15 +197,15 @@
 ]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
         <sys_class_name>sp_rel_widget_clone</sys_class_name>
         <sys_created_by>priyam01</sys_created_by>
-        <sys_created_on>2026-09-28 10:23:12</sys_created_on>
-        <sys_id>2daa602ac3a3039043d978cc05013118</sys_id>
+        <sys_created_on>2026-09-30 12:46:49</sys_created_on>
+        <sys_id>3cbedf0bc3af479043d978cc05013118</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>21aaece6c3a3039043d978cc0501310f</sys_name>
+        <sys_name>78be9f07c3af479043d978cc050131d3</sys_name>
         <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
-        <sys_update_name>sp_rel_widget_clone_2daa602ac3a3039043d978cc05013118</sys_update_name>
+        <sys_update_name>sp_rel_widget_clone_3cbedf0bc3af479043d978cc05013118</sys_update_name>
         <sys_updated_by>priyam01</sys_updated_by>
-        <sys_updated_on>2026-09-28 10:23:12</sys_updated_on>
+        <sys_updated_on>2026-09-30 12:46:49</sys_updated_on>
     </sp_rel_widget_clone>
 </record_update>

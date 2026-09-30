@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="INSERT_OR_UPDATE">
+        <can_read>true</can_read>
+        <can_share>true</can_share>
+        <can_write>false</can_write>
+        <dashboard display_value="Approval Turnaround Dashboard">cc4376c7c32b479043d978cc05013196</dashboard>
+        <group/>
+        <owner>false</owner>
+        <role display_value="x_1921751_employ_0.user" name="x_1921751_employ_0.user">2f7127bac3df431043d978cc050131f8</role>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>priyam01</sys_created_by>
+        <sys_created_on>2026-09-30 13:19:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3926ef4bc3ef479043d978cc05013184</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cc4376c7c32b479043d978cc05013196</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
+        <sys_update_name>par_dashboard_permission_3926ef4bc3ef479043d978cc05013184</sys_update_name>
+        <sys_updated_by>priyam01</sys_updated_by>
+        <sys_updated_on>2026-09-30 13:19:23</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+</record_update>

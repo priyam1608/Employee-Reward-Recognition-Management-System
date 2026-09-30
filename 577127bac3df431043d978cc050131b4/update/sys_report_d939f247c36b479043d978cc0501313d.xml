@@ -2,7 +2,7 @@
     <sys_report action="INSERT_OR_UPDATE">
         <active>true</active>
         <additional_groupby/>
-        <aggregate>COUNT</aggregate>
+        <aggregate>SUM</aggregate>
         <aggregation_source>no_override</aggregation_source>
         <allow_data_label_overlap>false</allow_data_label_overlap>
         <apply_alias>false</apply_alias>
@@ -21,15 +21,15 @@
         <chart_subtitle_color/>
         <chart_subtitle_size>14</chart_subtitle_size>
         <chart_subtitle_style>normal</chart_subtitle_style>
-        <chart_title>Approval Turnaround Report</chart_title>
-        <chart_title_color display_value="bubble3">a32f7bb843116110e88cbf5ff7b8f262</chart_title_color>
-        <chart_title_size>20</chart_title_size>
+        <chart_title/>
+        <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
+        <chart_title_size>16</chart_title_size>
         <chart_title_style>normal</chart_title_style>
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width>600</chart_width>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
-        <color_palette display_value="Subscription Data Visualization">b65eb82443d131102616c91766b8f21a</color_palette>
+        <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
         <column/>
         <compute_percent>aggregate</compute_percent>
@@ -47,9 +47,10 @@
         <donut_width_percent>30</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>status</field>
-        <field_list>number,reward_type,amount,employee,department,requested_by,justification,quarter,status</field_list>
-        <filter/>
+        <field>quarter</field>
+        <field_list>department,quarter,year,allocated_budget,consumed_budget,remaining_budget</field_list>
+        <filter table="x_1921751_employ_0_department_reward_budget">department.dept_headDYNAMIC90d1921e5f510100a9ad2572f2b477fe<item endquery="false" field="department.dept_head" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+        </filter>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -74,7 +75,7 @@
         <macroponent/>
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
-        <name>Approval Turnaround Report</name>
+        <name>Logged in User's department budget snapshot</name>
         <no_bulk_migration>false</no_bulk_migration>
         <orderby_list/>
         <other_threshold>-2</other_threshold>
@@ -93,10 +94,10 @@
         <sc_stackby_item_id/>
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
-        <series_name_text/>
-        <set_color>color_palette</set_color>
+        <series_name_text>Allocated Budget</series_name_text>
+        <set_color>one_color</set_color>
         <show_chart_border>false</show_chart_border>
-        <show_chart_data_label>false</show_chart_data_label>
+        <show_chart_data_label>true</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>false</show_chart_total>
         <show_data_label_position_middle>false</show_data_label_position_middle>
@@ -109,24 +110,24 @@
         <source_type>table</source_type>
         <start_time/>
         <style_config/>
-        <sumfield/>
+        <sumfield>allocated_budget</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>priyam01</sys_created_by>
-        <sys_created_on>2026-09-25 10:12:51</sys_created_on>
+        <sys_created_on>2026-09-30 10:03:01</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>788b09a9c3230b5043d978cc05013195</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Approval Turnaround Report</sys_name>
+        <sys_id>d939f247c36b479043d978cc0501313d</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Logged in User's department budget snapshot</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
-        <sys_update_name>sys_report_788b09a9c3230b5043d978cc05013195</sys_update_name>
+        <sys_update_name>sys_report_d939f247c36b479043d978cc0501313d</sys_update_name>
         <sys_updated_by>priyam01</sys_updated_by>
-        <sys_updated_on>2026-09-29 14:01:11</sys_updated_on>
-        <table>x_1921751_employ_0_reward_request</table>
-        <title>Approval Turnaround Report</title>
+        <sys_updated_on>2026-09-30 11:43:02</sys_updated_on>
+        <table>x_1921751_employ_0_department_reward_budget</table>
+        <title>Logged in User's department budget snapshot</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
@@ -137,7 +138,7 @@
         <use_null_in_trend>false</use_null_in_trend>
         <user>GLOBAL</user>
         <x_axis_allow_decimals>true</x_axis_allow_decimals>
-        <x_axis_display_grid>false</x_axis_display_grid>
+        <x_axis_display_grid>true</x_axis_display_grid>
         <x_axis_grid_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</x_axis_grid_color>
         <x_axis_grid_dotted>false</x_axis_grid_dotted>
         <x_axis_grid_width>1</x_axis_grid_width>
@@ -146,7 +147,7 @@
         <x_axis_label_size>11</x_axis_label_size>
         <x_axis_label_tilt>0</x_axis_label_tilt>
         <x_axis_opposite>false</x_axis_opposite>
-        <x_axis_title>Status</x_axis_title>
+        <x_axis_title>Quarter</x_axis_title>
         <x_axis_title_bold>true</x_axis_title_bold>
         <x_axis_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_title_color>
         <x_axis_title_size>12</x_axis_title_size>
@@ -161,7 +162,7 @@
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_label_tilt>0</y_axis_label_tilt>
         <y_axis_opposite>false</y_axis_opposite>
-        <y_axis_title/>
+        <y_axis_title>Budget (in ₹)</y_axis_title>
         <y_axis_title_bold>true</y_axis_title_bold>
         <y_axis_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_title_color>
         <y_axis_title_size>12</y_axis_title_size>

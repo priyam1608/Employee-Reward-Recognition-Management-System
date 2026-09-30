@@ -4,15 +4,17 @@
         <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
         <controller_as>c</controller_as>
         <css>.img-styling{
-  height: 50% !important;
-  width: 50% !important;
+  height: 37% !important;
+  width: 100% !important;
   max-width: 100%;
 }
+
+/*
+
 div{
 	text-align: left;
 }
 
-/* tablets */
 @media (max-width: 991px){
   .img-styling{
     width: 75% !important;
@@ -20,13 +22,16 @@ div{
   }
 }
 
-/* phones */
+
 @media (max-width: 767px){
   .img-styling{
     width: 100% !important;
     height: auto !important;
   }
-}</css>
+}
+
+*/
+</css>
         <data_table>sp_instance_carousel</data_table>
         <demo_data/>
         <description/>
@@ -77,14 +82,14 @@ while (gr.next()) {
         <sys_created_by>priyam01</sys_created_by>
         <sys_created_on>2026-09-26 12:59:16</sys_created_on>
         <sys_id>403bb271c363cb5043d978cc05013133</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Reward Catalog Banner</sys_name>
         <sys_package display_value="Employee Reward Management" source="x_1921751_employ_0">577127bac3df431043d978cc050131b4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Employee Reward Management">577127bac3df431043d978cc050131b4</sys_scope>
         <sys_update_name>sp_widget_403bb271c363cb5043d978cc05013133</sys_update_name>
         <sys_updated_by>priyam01</sys_updated_by>
-        <sys_updated_on>2026-09-28 11:16:15</sys_updated_on>
+        <sys_updated_on>2026-09-30 10:45:45</sys_updated_on>
         <template><![CDATA[<div class="pull-in">
   <uib-carousel interval="options.interval">
     <uib-slide ng-repeat="slide in ::data.slides" active="slide.active">
